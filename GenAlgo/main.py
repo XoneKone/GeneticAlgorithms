@@ -22,8 +22,19 @@ def population(number_of_individuals, number_of_genes, upper_limit, lower_limit)
 # TODO: Сделать универсальную фукнцию.
 # TODO:  Возможно, вынести параметры, для которых будут вызываться вычисление соотвествующей функции
 # TODO: Поменять в функциях соответсвующие вызовы этого метода
+# Сюда поставлю глобальную переменную, чтобы определять находим мы min, max
+mode = 'max'
+# А сюда, чтобы определять чью задачу решать
+task = 'K'  # R - Rosenbrok, K - Khvan, S - Shishkina
+
+
 def fitness_calculation(individual):
-    return -TestFunctions.rosenbrock_function(individual[0], individual[1])
+    if mode == 'min':
+        if task == 'R':
+            return -TestFunctions.rosenbrock_function(individual[0], individual[1])
+    else:
+        if task == 'K':
+            return TestFunctions.kkhvan_function(individual[0], individual[1])
 
 
 def selection(generation, method='Fittest Half'):
@@ -78,11 +89,11 @@ def mating(parents, method='Single Point'):
 
 
 def mutation(individual, upper_limit, lower_limit, muatation_rate=2, method='Reset', standard_deviation=0.001):
-    gene = [randint(0, 7)]
+    gene = [randint(0, 2)]
     for x in range(muatation_rate - 1):
-        gene.append(randint(0, 7))
+        gene.append(randint(0, 2))
         while len(set(gene)) < len(gene):
-            gene[x] = randint(0, 7)
+            gene[x] = randint(0, 2)
     mutated_individual = individual.copy()
     if method == 'Gauss':
         for x in range(muatation_rate):
@@ -158,14 +169,19 @@ def main(generations_number, number_of_individuals, number_of_genes, upper_limit
         gen.append(next_generation(gen[-1], 1, 0))
         fitness_avg = np.append(fitness_avg, sum(gen[-1]['Fitness']) / len(gen[-1]['Fitness']))
         fitness_max = np.append(fitness_max, max(gen[-1]['Fitness']))
-    for gener in gen:
-        gener["Fitness"] = [-x for x in gener["Fitness"]]
+    ## Для минимума нужно сделать инверсию значений
+    if mode == 'min':
+        for gener in gen:
+            gener["Fitness"] = [-x for x in gener["Fitness"]]
     with open("GA_results.txt", "w") as res:
         for index, generation in enumerate(gen, 1):
             res.write("INFO about generation " + str(index) + ':\n')
             for indiv in zip(generation['Individuals'], generation['Fitness']):
                 res.write("Individual " + str(indiv[0]) + " gives value: " + str(indiv[1]) + "\n")
-            res.write("\nmin value for this generation: " + str(min(generation['Fitness'])) + "\n\n")
+            if mode == 'min':
+                res.write("\nmin value for this generation: " + str(min(generation['Fitness'])) + "\n\n")
+            else:
+                res.write("\nmax value for this generation: " + str(max(generation['Fitness'])) + "\n\n")
     gui(gen, generations_number)
 
 
@@ -175,7 +191,12 @@ def gui(generations, generations_number):
     Y = np.arange(-3, 3, 0.1)
     X, Y = np.meshgrid(X, Y)
 
-    Z = TestFunctions.rosenbrock_function(X, Y)
+    if task == "R":
+        Z = TestFunctions.rosenbrock_function(X, Y)
+    elif task == "K":
+        Z = TestFunctions.kkhvan_function(X, Y)
+    else:
+        Z = TestFunctions.dshishkina_function(X, Y)
 
     fig = plt.figure(figsize=(6, 6), num='GA animation')
 
