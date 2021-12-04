@@ -1,1200 +1,480 @@
 INFO about generation 1:
-Individual [-1.0, -1.0] gives value: 0.1353352832366127
-Individual [-1.0, -1.0] gives value: 0.1353352832366127
-Individual [-1.0, -1.0] gives value: 0.1353352832366127
-Individual [-1.0, -1.0] gives value: 0.1353352832366127
-Individual [-1.0, -1.0] gives value: 0.1353352832366127
-Individual [-1.0, -1.0] gives value: 0.1353352832366127
-Individual [-1.0, -1.0] gives value: 0.1353352832366127
-Individual [-1.0, -1.0] gives value: 0.1353352832366127
-Individual [-1.0, -1.0] gives value: 0.1353352832366127
-Individual [-1.0, -1.0] gives value: 0.1353352832366127
-Individual [-1.0, -1.0] gives value: 0.1353352832366127
-Individual [-1.0, -1.0] gives value: 0.1353352832366127
-Individual [-1.0, -1.0] gives value: 0.1353352832366127
-Individual [-1.0, -1.0] gives value: 0.1353352832366127
-Individual [-1.0, -1.0] gives value: 0.1353352832366127
-Individual [-1.0, -1.0] gives value: 0.1353352832366127
-Individual [-1.0, -1.0] gives value: 0.1353352832366127
-Individual [-1.0, -1.0] gives value: 0.1353352832366127
-Individual [-1.0, -1.0] gives value: 0.1353352832366127
-Individual [-1.0, -1.0] gives value: 0.1353352832366127
+Individual [-1.0, -1.0, -1.0, -1.0] gives value: 0.1353352832366127
+Individual [-1.0, -1.0, -1.0, -1.0] gives value: 0.1353352832366127
+Individual [-1.0, -1.0, -1.0, -1.0] gives value: 0.1353352832366127
+Individual [-1.0, -1.0, -1.0, -1.0] gives value: 0.1353352832366127
+Individual [-1.0, -1.0, -1.0, -1.0] gives value: 0.1353352832366127
+Individual [-1.0, -1.0, -1.0, -1.0] gives value: 0.1353352832366127
+Individual [-1.0, -1.0, -1.0, -1.0] gives value: 0.1353352832366127
+Individual [-1.0, -1.0, -1.0, -1.0] gives value: 0.1353352832366127
+Individual [-1.0, -1.0, -1.0, -1.0] gives value: 0.1353352832366127
+Individual [-1.0, -1.0, -1.0, -1.0] gives value: 0.1353352832366127
+Individual [-1.0, -1.0, -1.0, -1.0] gives value: 0.1353352832366127
+Individual [-1.0, -1.0, -1.0, -1.0] gives value: 0.1353352832366127
+Individual [-1.0, -1.0, -1.0, -1.0] gives value: 0.1353352832366127
+Individual [-1.0, -1.0, -1.0, -1.0] gives value: 0.1353352832366127
+Individual [-1.0, -1.0, -1.0, -1.0] gives value: 0.1353352832366127
+Individual [-1.0, -1.0, -1.0, -1.0] gives value: 0.1353352832366127
+Individual [-1.0, -1.0, -1.0, -1.0] gives value: 0.1353352832366127
+Individual [-1.0, -1.0, -1.0, -1.0] gives value: 0.1353352832366127
+Individual [-1.0, -1.0, -1.0, -1.0] gives value: 0.1353352832366127
+Individual [-1.0, -1.0, -1.0, -1.0] gives value: 0.1353352832366127
 
 max value for this generation: 0.1353352832366127
 
 INFO about generation 2:
-Individual [-1.0, -1.0] gives value: 0.1353352832366127
-Individual [0.6, 1.0] gives value: 0.25666077695355594
-Individual [0.8, 0.7] gives value: 0.3230332564222529
-Individual [0.8, 0.6] gives value: 0.36787944117144233
-Individual [0.7, 0.7] gives value: 0.37531109885139957
-Individual [0.8, 0.5] gives value: 0.41065575275234545
-Individual [0.8, 0.5] gives value: 0.41065575275234545
-Individual [0.9, 0.2] gives value: 0.42741493194872665
-Individual [0.2, 0.8] gives value: 0.5066169923655895
-Individual [0.7, 0.4] gives value: 0.522045776761016
-Individual [0.4, 0.6] gives value: 0.5945205479701944
-Individual [0.7, 0.1] gives value: 0.6065306597126334
-Individual [0.7, 0.0] gives value: 0.6126263941844161
-Individual [0.1, 0.6] gives value: 0.6907343306373547
-Individual [0.6, 0.1] gives value: 0.6907343306373547
-Individual [0.4, 0.4] gives value: 0.7261490370736908
-Individual [0.2, 0.5] gives value: 0.7482635675785652
-Individual [0.5, 0.1] gives value: 0.7710515858035663
-Individual [0.3, 0.4] gives value: 0.7788007830714049
-Individual [0.2, 0.4] gives value: 0.8187307530779818
+Individual [-1.0, -1.0, -1.0, -1.0] gives value: 0.1353352832366127
+Individual [1.0, 0.8, -1.0, -1.0] gives value: 0.19398004229089189
+Individual [0.9, 0.9, -1.0, -1.0] gives value: 0.19789869908361465
+Individual [0.4, 1.0, -1.0, -1.0] gives value: 0.31348618088260527
+Individual [0.3, 1.0, -1.0, -1.0] gives value: 0.33621649370673334
+Individual [0.7, 0.7, -1.0, -1.0] gives value: 0.37531109885139957
+Individual [0.3, 0.9, -1.0, -1.0] gives value: 0.4065696597405991
+Individual [0.9, 0.2, -1.0, -1.0] gives value: 0.42741493194872665
+Individual [0.0, 0.9, -1.0, -1.0] gives value: 0.4448580662229411
+Individual [0.7, 0.5, -1.0, -1.0] gives value: 0.4771139155210344
+Individual [0.7, 0.3, -1.0, -1.0] gives value: 0.559898366565402
+Individual [0.2, 0.6, -1.0, -1.0] gives value: 0.6703200460356393
+Individual [0.2, 0.6, -1.0, -1.0] gives value: 0.6703200460356393
+Individual [0.6, 0.2, -1.0, -1.0] gives value: 0.6703200460356393
+Individual [0.1, 0.6, -1.0, -1.0] gives value: 0.6907343306373547
+Individual [0.6, 0.1, -1.0, -1.0] gives value: 0.6907343306373547
+Individual [0.5, 0.2, -1.0, -1.0] gives value: 0.7482635675785652
+Individual [0.4, 0.2, -1.0, -1.0] gives value: 0.8187307530779818
+Individual [0.3, 0.1, -1.0, -1.0] gives value: 0.9048374180359595
+Individual [0.2, 0.2, -1.0, -1.0] gives value: 0.9231163463866358
 
-max value for this generation: 0.8187307530779818
+max value for this generation: 0.9231163463866358
 
 INFO about generation 3:
-Individual [0.7, 1.0] gives value: 0.22537265553943872
-Individual [1.0, 0.7] gives value: 0.22537265553943872
-Individual [0.6, 1.0] gives value: 0.25666077695355594
-Individual [0.8, 0.8] gives value: 0.2780373004531941
-Individual [0.8, 0.8] gives value: 0.2780373004531941
-Individual [0.6, 0.9] gives value: 0.31036694126548503
-Individual [1.0, 0.4] gives value: 0.31348618088260527
-Individual [0.4, 1.0] gives value: 0.31348618088260527
-Individual [0.3, 1.0] gives value: 0.33621649370673334
-Individual [1.0, 0.1] gives value: 0.3642189795715233
-Individual [0.4, 0.9] gives value: 0.3790830381033988
-Individual [0.7, 0.6] gives value: 0.4274149319487267
-Individual [0.7, 0.6] gives value: 0.4274149319487267
-Individual [0.8, 0.3] gives value: 0.4819089900902024
-Individual [0.8, 0.2] gives value: 0.5066169923655895
-Individual [0.4, 0.7] gives value: 0.522045776761016
-Individual [0.5, 0.2] gives value: 0.7482635675785652
-Individual [0.2, 0.4] gives value: 0.8187307530779818
-Individual [0.1, 0.2] gives value: 0.951229424500714
-Individual [0.1, 0.1] gives value: 0.9801986733067553
+Individual [1.0, 0.7, -1.0, -1.0] gives value: 0.22537265553943872
+Individual [0.5, 1.0, -1.0, -1.0] gives value: 0.2865047968601901
+Individual [0.5, 0.9, -1.0, -1.0] gives value: 0.3464558103300574
+Individual [0.7, 0.7, -1.0, -1.0] gives value: 0.37531109885139957
+Individual [0.9, 0.4, -1.0, -1.0] gives value: 0.3790830381033988
+Individual [0.0, 0.9, -1.0, -1.0] gives value: 0.4448580662229411
+Individual [0.8, 0.2, -1.0, -1.0] gives value: 0.5066169923655895
+Individual [0.7, 0.1, -1.0, -1.0] gives value: 0.6065306597126334
+Individual [0.7, 0.1, -1.0, -1.0] gives value: 0.6065306597126334
+Individual [0.6, 0.3, -1.0, -1.0] gives value: 0.6376281516217733
+Individual [0.5, 0.4, -1.0, -1.0] gives value: 0.6636502501363194
+Individual [0.6, 0.2, -1.0, -1.0] gives value: 0.6703200460356393
+Individual [0.6, 0.1, -1.0, -1.0] gives value: 0.6907343306373547
+Individual [0.0, 0.6, -1.0, -1.0] gives value: 0.697676326071031
+Individual [0.4, 0.3, -1.0, -1.0] gives value: 0.7788007830714049
+Individual [0.5, 0.0, -1.0, -1.0] gives value: 0.7788007830714049
+Individual [0.4, 0.3, -1.0, -1.0] gives value: 0.7788007830714049
+Individual [0.3, 0.0, -1.0, -1.0] gives value: 0.9139311852712282
+Individual [0.2, 0.2, -1.0, -1.0] gives value: 0.9231163463866358
+Individual [0.1, 0.1, -1.0, -1.0] gives value: 0.9801986733067553
 
 max value for this generation: 0.9801986733067553
 
 INFO about generation 4:
-Individual [0.7, 0.9] gives value: 0.2725317930340126
-Individual [0.9, 0.5] gives value: 0.3464558103300574
-Individual [0.0, 1.0] gives value: 0.36787944117144233
-Individual [0.9, 0.3] gives value: 0.4065696597405991
-Individual [0.3, 0.9] gives value: 0.4065696597405991
-Individual [0.2, 0.9] gives value: 0.42741493194872665
-Individual [0.1, 0.9] gives value: 0.44043165450599925
-Individual [0.5, 0.7] gives value: 0.4771139155210344
-Individual [0.7, 0.5] gives value: 0.4771139155210344
-Individual [0.8, 0.2] gives value: 0.5066169923655895
-Individual [0.1, 0.7] gives value: 0.6065306597126334
-Individual [0.4, 0.5] gives value: 0.6636502501363194
-Individual [0.3, 0.4] gives value: 0.7788007830714049
-Individual [0.3, 0.3] gives value: 0.835270211411272
-Individual [0.4, 0.1] gives value: 0.8436648165963836
-Individual [0.1, 0.4] gives value: 0.8436648165963836
-Individual [0.2, 0.3] gives value: 0.8780954309205613
-Individual [0.2, 0.2] gives value: 0.9231163463866358
-Individual [0.1, 0.1] gives value: 0.9801986733067553
-Individual [0.0, 0.0] gives value: 1.0
+Individual [0.9, 0.9, -1.0, -1.0] gives value: 0.19789869908361465
+Individual [0.7, 1.0, -1.0, -1.0] gives value: 0.22537265553943872
+Individual [0.7, 1.0, -1.0, -1.0] gives value: 0.22537265553943872
+Individual [0.9, 0.8, -1.0, -1.0] gives value: 0.23457028809379762
+Individual [0.8, 0.8, -1.0, -1.0] gives value: 0.2780373004531941
+Individual [0.3, 1.0, -1.0, -1.0] gives value: 0.33621649370673334
+Individual [0.9, 0.5, -1.0, -1.0] gives value: 0.3464558103300574
+Individual [0.9, 0.4, -1.0, -1.0] gives value: 0.3790830381033988
+Individual [0.5, 0.8, -1.0, -1.0] gives value: 0.41065575275234545
+Individual [0.5, 0.8, -1.0, -1.0] gives value: 0.41065575275234545
+Individual [0.1, 0.9, -1.0, -1.0] gives value: 0.44043165450599925
+Individual [0.4, 0.7, -1.0, -1.0] gives value: 0.522045776761016
+Individual [0.4, 0.6, -1.0, -1.0] gives value: 0.5945205479701944
+Individual [0.6, 0.4, -1.0, -1.0] gives value: 0.5945205479701944
+Individual [0.6, 0.1, -1.0, -1.0] gives value: 0.6907343306373547
+Individual [0.0, 0.6, -1.0, -1.0] gives value: 0.697676326071031
+Individual [0.5, 0.2, -1.0, -1.0] gives value: 0.7482635675785652
+Individual [0.4, 0.2, -1.0, -1.0] gives value: 0.8187307530779818
+Individual [0.2, 0.0, -1.0, -1.0] gives value: 0.9607894391523232
+Individual [0.1, 0.1, -1.0, -1.0] gives value: 0.9801986733067553
 
-max value for this generation: 1.0
+max value for this generation: 0.9801986733067553
 
 INFO about generation 5:
-Individual [0.9, 0.8] gives value: 0.23457028809379762
-Individual [1.0, 0.6] gives value: 0.25666077695355594
-Individual [0.6, 0.8] gives value: 0.36787944117144233
-Individual [0.6, 0.8] gives value: 0.36787944117144233
-Individual [0.3, 0.9] gives value: 0.4065696597405991
-Individual [0.5, 0.7] gives value: 0.4771139155210344
-Individual [0.8, 0.3] gives value: 0.4819089900902024
-Individual [0.6, 0.6] gives value: 0.4867522559599717
-Individual [0.2, 0.8] gives value: 0.5066169923655895
-Individual [0.2, 0.8] gives value: 0.5066169923655895
-Individual [0.6, 0.5] gives value: 0.5433508690744998
-Individual [0.2, 0.7] gives value: 0.5886049696783553
-Individual [0.7, 0.1] gives value: 0.6065306597126334
-Individual [0.1, 0.7] gives value: 0.6065306597126334
-Individual [0.4, 0.3] gives value: 0.7788007830714049
-Individual [0.4, 0.1] gives value: 0.8436648165963836
-Individual [0.0, 0.4] gives value: 0.8521437889662113
-Individual [0.3, 0.1] gives value: 0.9048374180359595
-Individual [0.1, 0.0] gives value: 0.9900498337491681
-Individual [0.0, 0.0] gives value: 1.0
+Individual [0.9, 0.6, -1.0, -1.0] gives value: 0.31036694126548503
+Individual [0.8, 0.7, -1.0, -1.0] gives value: 0.3230332564222529
+Individual [0.5, 0.9, -1.0, -1.0] gives value: 0.3464558103300574
+Individual [0.9, 0.5, -1.0, -1.0] gives value: 0.3464558103300574
+Individual [0.8, 0.6, -1.0, -1.0] gives value: 0.36787944117144233
+Individual [0.8, 0.5, -1.0, -1.0] gives value: 0.41065575275234545
+Individual [0.2, 0.9, -1.0, -1.0] gives value: 0.42741493194872665
+Individual [0.4, 0.8, -1.0, -1.0] gives value: 0.4493289641172215
+Individual [0.8, 0.3, -1.0, -1.0] gives value: 0.4819089900902024
+Individual [0.8, 0.3, -1.0, -1.0] gives value: 0.4819089900902024
+Individual [0.7, 0.4, -1.0, -1.0] gives value: 0.522045776761016
+Individual [0.5, 0.4, -1.0, -1.0] gives value: 0.6636502501363194
+Individual [0.6, 0.0, -1.0, -1.0] gives value: 0.697676326071031
+Individual [0.3, 0.5, -1.0, -1.0] gives value: 0.7117703227626098
+Individual [0.5, 0.1, -1.0, -1.0] gives value: 0.7710515858035663
+Individual [0.3, 0.4, -1.0, -1.0] gives value: 0.7788007830714049
+Individual [0.3, 0.3, -1.0, -1.0] gives value: 0.835270211411272
+Individual [0.4, 0.1, -1.0, -1.0] gives value: 0.8436648165963836
+Individual [0.0, 0.3, -1.0, -1.0] gives value: 0.9139311852712282
+Individual [0.1, 0.1, -1.0, -1.0] gives value: 0.9801986733067553
 
-max value for this generation: 1.0
+max value for this generation: 0.9801986733067553
 
 INFO about generation 6:
-Individual [1.0, 1.0] gives value: 0.1353352832366127
-Individual [0.9, 0.6] gives value: 0.31036694126548503
-Individual [0.6, 0.9] gives value: 0.31036694126548503
-Individual [0.9, 0.2] gives value: 0.42741493194872665
-Individual [0.0, 0.9] gives value: 0.4448580662229411
-Individual [0.6, 0.6] gives value: 0.4867522559599717
-Individual [0.8, 0.1] gives value: 0.5220457767610159
-Individual [0.1, 0.8] gives value: 0.5220457767610159
-Individual [0.8, 0.0] gives value: 0.5272924240430485
-Individual [0.7, 0.3] gives value: 0.559898366565402
-Individual [0.7, 0.2] gives value: 0.5886049696783553
-Individual [0.7, 0.2] gives value: 0.5886049696783553
-Individual [0.6, 0.1] gives value: 0.6907343306373547
-Individual [0.1, 0.6] gives value: 0.6907343306373547
-Individual [0.1, 0.6] gives value: 0.6907343306373547
-Individual [0.0, 0.5] gives value: 0.7788007830714049
-Individual [0.5, 0.0] gives value: 0.7788007830714049
-Individual [0.0, 0.2] gives value: 0.9607894391523232
-Individual [0.0, 0.1] gives value: 0.9900498337491681
-Individual [0.0, 0.0] gives value: 1.0
+Individual [0.9, 0.8, -1.0, -1.0] gives value: 0.23457028809379762
+Individual [0.8, 0.9, -1.0, -1.0] gives value: 0.23457028809379762
+Individual [0.8, 0.8, -1.0, -1.0] gives value: 0.2780373004531941
+Individual [0.9, 0.6, -1.0, -1.0] gives value: 0.31036694126548503
+Individual [0.7, 0.8, -1.0, -1.0] gives value: 0.3230332564222529
+Individual [1.0, 0.3, -1.0, -1.0] gives value: 0.33621649370673334
+Individual [0.9, 0.5, -1.0, -1.0] gives value: 0.3464558103300574
+Individual [0.4, 0.9, -1.0, -1.0] gives value: 0.3790830381033988
+Individual [0.9, 0.2, -1.0, -1.0] gives value: 0.42741493194872665
+Individual [0.7, 0.5, -1.0, -1.0] gives value: 0.4771139155210344
+Individual [0.8, 0.3, -1.0, -1.0] gives value: 0.4819089900902024
+Individual [0.7, 0.4, -1.0, -1.0] gives value: 0.522045776761016
+Individual [0.3, 0.7, -1.0, -1.0] gives value: 0.559898366565402
+Individual [0.5, 0.5, -1.0, -1.0] gives value: 0.6065306597126334
+Individual [0.0, 0.7, -1.0, -1.0] gives value: 0.6126263941844161
+Individual [0.6, 0.3, -1.0, -1.0] gives value: 0.6376281516217733
+Individual [0.5, 0.4, -1.0, -1.0] gives value: 0.6636502501363194
+Individual [0.1, 0.3, -1.0, -1.0] gives value: 0.9048374180359595
+Individual [0.1, 0.1, -1.0, -1.0] gives value: 0.9801986733067553
+Individual [0.0, 0.1, -1.0, -1.0] gives value: 0.9900498337491681
 
-max value for this generation: 1.0
+max value for this generation: 0.9900498337491681
 
 INFO about generation 7:
-Individual [1.0, 0.9] gives value: 0.16365413680270405
-Individual [0.7, 1.0] gives value: 0.22537265553943872
-Individual [0.9, 0.7] gives value: 0.2725317930340126
-Individual [0.5, 1.0] gives value: 0.2865047968601901
-Individual [0.8, 0.7] gives value: 0.3230332564222529
-Individual [0.2, 1.0] gives value: 0.35345468195878016
-Individual [0.9, 0.3] gives value: 0.4065696597405991
-Individual [0.3, 0.8] gives value: 0.4819089900902024
-Individual [0.8, 0.1] gives value: 0.5220457767610159
-Individual [0.1, 0.8] gives value: 0.5220457767610159
-Individual [0.5, 0.6] gives value: 0.5433508690744998
-Individual [0.1, 0.6] gives value: 0.6907343306373547
-Individual [0.3, 0.5] gives value: 0.7117703227626098
-Individual [0.4, 0.4] gives value: 0.7261490370736908
-Individual [0.5, 0.1] gives value: 0.7710515858035663
-Individual [0.1, 0.3] gives value: 0.9048374180359595
-Individual [0.1, 0.2] gives value: 0.951229424500714
-Individual [0.2, 0.0] gives value: 0.9607894391523232
-Individual [0.1, 0.1] gives value: 0.9801986733067553
-Individual [0.0, 0.0] gives value: 1.0
+Individual [1.0, 0.9, -1.0, -1.0] gives value: 0.16365413680270405
+Individual [0.9, 0.9, -1.0, -1.0] gives value: 0.19789869908361465
+Individual [1.0, 0.6, -1.0, -1.0] gives value: 0.25666077695355594
+Individual [1.0, 0.6, -1.0, -1.0] gives value: 0.25666077695355594
+Individual [0.8, 0.7, -1.0, -1.0] gives value: 0.3230332564222529
+Individual [0.1, 1.0, -1.0, -1.0] gives value: 0.3642189795715233
+Individual [0.3, 0.9, -1.0, -1.0] gives value: 0.4065696597405991
+Individual [0.2, 0.9, -1.0, -1.0] gives value: 0.42741493194872665
+Individual [0.5, 0.7, -1.0, -1.0] gives value: 0.4771139155210344
+Individual [0.6, 0.6, -1.0, -1.0] gives value: 0.4867522559599717
+Individual [0.4, 0.7, -1.0, -1.0] gives value: 0.522045776761016
+Individual [0.6, 0.4, -1.0, -1.0] gives value: 0.5945205479701944
+Individual [0.0, 0.7, -1.0, -1.0] gives value: 0.6126263941844161
+Individual [0.4, 0.5, -1.0, -1.0] gives value: 0.6636502501363194
+Individual [0.2, 0.6, -1.0, -1.0] gives value: 0.6703200460356393
+Individual [0.5, 0.3, -1.0, -1.0] gives value: 0.7117703227626098
+Individual [0.3, 0.5, -1.0, -1.0] gives value: 0.7117703227626098
+Individual [0.5, 0.1, -1.0, -1.0] gives value: 0.7710515858035663
+Individual [0.3, 0.1, -1.0, -1.0] gives value: 0.9048374180359595
+Individual [0.0, 0.1, -1.0, -1.0] gives value: 0.9900498337491681
 
-max value for this generation: 1.0
+max value for this generation: 0.9900498337491681
 
 INFO about generation 8:
-Individual [1.0, 0.9] gives value: 0.16365413680270405
-Individual [0.8, 0.9] gives value: 0.23457028809379762
-Individual [1.0, 0.3] gives value: 0.33621649370673334
-Individual [0.1, 1.0] gives value: 0.3642189795715233
-Individual [0.6, 0.8] gives value: 0.36787944117144233
-Individual [0.9, 0.1] gives value: 0.44043165450599925
-Individual [0.3, 0.8] gives value: 0.4819089900902024
-Individual [0.6, 0.6] gives value: 0.4867522559599717
-Individual [0.8, 0.2] gives value: 0.5066169923655895
-Individual [0.1, 0.8] gives value: 0.5220457767610159
-Individual [0.8, 0.1] gives value: 0.5220457767610159
-Individual [0.4, 0.7] gives value: 0.522045776761016
-Individual [0.3, 0.7] gives value: 0.559898366565402
-Individual [0.2, 0.7] gives value: 0.5886049696783553
-Individual [0.6, 0.4] gives value: 0.5945205479701944
-Individual [0.3, 0.6] gives value: 0.6376281516217733
-Individual [0.2, 0.5] gives value: 0.7482635675785652
-Individual [0.2, 0.2] gives value: 0.9231163463866358
-Individual [0.0, 0.2] gives value: 0.9607894391523232
-Individual [0.0, 0.0] gives value: 1.0
+Individual [0.6, 1.0, -1.0, -1.0] gives value: 0.25666077695355594
+Individual [0.9, 0.7, -1.0, -1.0] gives value: 0.2725317930340126
+Individual [0.4, 1.0, -1.0, -1.0] gives value: 0.31348618088260527
+Individual [0.1, 1.0, -1.0, -1.0] gives value: 0.3642189795715233
+Individual [0.1, 1.0, -1.0, -1.0] gives value: 0.3642189795715233
+Individual [1.0, 0.0, -1.0, -1.0] gives value: 0.36787944117144233
+Individual [0.8, 0.5, -1.0, -1.0] gives value: 0.41065575275234545
+Individual [0.9, 0.1, -1.0, -1.0] gives value: 0.44043165450599925
+Individual [0.7, 0.5, -1.0, -1.0] gives value: 0.4771139155210344
+Individual [0.7, 0.5, -1.0, -1.0] gives value: 0.4771139155210344
+Individual [0.2, 0.8, -1.0, -1.0] gives value: 0.5066169923655895
+Individual [0.4, 0.6, -1.0, -1.0] gives value: 0.5945205479701944
+Individual [0.5, 0.5, -1.0, -1.0] gives value: 0.6065306597126334
+Individual [0.6, 0.3, -1.0, -1.0] gives value: 0.6376281516217733
+Individual [0.6, 0.1, -1.0, -1.0] gives value: 0.6907343306373547
+Individual [0.5, 0.2, -1.0, -1.0] gives value: 0.7482635675785652
+Individual [0.5, 0.1, -1.0, -1.0] gives value: 0.7710515858035663
+Individual [0.4, 0.3, -1.0, -1.0] gives value: 0.7788007830714049
+Individual [0.2, 0.1, -1.0, -1.0] gives value: 0.951229424500714
+Individual [0.0, 0.1, -1.0, -1.0] gives value: 0.9900498337491681
 
-max value for this generation: 1.0
+max value for this generation: 0.9900498337491681
 
 INFO about generation 9:
-Individual [0.9, 1.0] gives value: 0.16365413680270405
-Individual [0.8, 1.0] gives value: 0.19398004229089189
-Individual [0.9, 0.9] gives value: 0.19789869908361465
-Individual [1.0, 0.6] gives value: 0.25666077695355594
-Individual [0.9, 0.7] gives value: 0.2725317930340126
-Individual [0.9, 0.7] gives value: 0.2725317930340126
-Individual [0.9, 0.3] gives value: 0.4065696597405991
-Individual [0.2, 0.9] gives value: 0.42741493194872665
-Individual [0.2, 0.9] gives value: 0.42741493194872665
-Individual [0.8, 0.2] gives value: 0.5066169923655895
-Individual [0.6, 0.3] gives value: 0.6376281516217733
-Individual [0.4, 0.5] gives value: 0.6636502501363194
-Individual [0.5, 0.3] gives value: 0.7117703227626098
-Individual [0.4, 0.4] gives value: 0.7261490370736908
-Individual [0.2, 0.5] gives value: 0.7482635675785652
-Individual [0.4, 0.2] gives value: 0.8187307530779818
-Individual [0.3, 0.2] gives value: 0.8780954309205613
-Individual [0.1, 0.2] gives value: 0.951229424500714
-Individual [0.1, 0.1] gives value: 0.9801986733067553
-Individual [0.0, 0.0] gives value: 1.0
+Individual [1.0, 0.8, -1.0, -1.0] gives value: 0.19398004229089189
+Individual [0.9, 0.9, -1.0, -1.0] gives value: 0.19789869908361465
+Individual [0.8, 0.9, -1.0, -1.0] gives value: 0.23457028809379762
+Individual [0.9, 0.7, -1.0, -1.0] gives value: 0.2725317930340126
+Individual [0.8, 0.7, -1.0, -1.0] gives value: 0.3230332564222529
+Individual [0.0, 1.0, -1.0, -1.0] gives value: 0.36787944117144233
+Individual [0.4, 0.9, -1.0, -1.0] gives value: 0.3790830381033988
+Individual [0.9, 0.3, -1.0, -1.0] gives value: 0.4065696597405991
+Individual [0.7, 0.5, -1.0, -1.0] gives value: 0.4771139155210344
+Individual [0.7, 0.4, -1.0, -1.0] gives value: 0.522045776761016
+Individual [0.8, 0.0, -1.0, -1.0] gives value: 0.5272924240430485
+Individual [0.7, 0.2, -1.0, -1.0] gives value: 0.5886049696783553
+Individual [0.7, 0.1, -1.0, -1.0] gives value: 0.6065306597126334
+Individual [0.5, 0.4, -1.0, -1.0] gives value: 0.6636502501363194
+Individual [0.0, 0.6, -1.0, -1.0] gives value: 0.697676326071031
+Individual [0.3, 0.5, -1.0, -1.0] gives value: 0.7117703227626098
+Individual [0.3, 0.5, -1.0, -1.0] gives value: 0.7117703227626098
+Individual [0.5, 0.1, -1.0, -1.0] gives value: 0.7710515858035663
+Individual [0.4, 0.3, -1.0, -1.0] gives value: 0.7788007830714049
+Individual [0.0, 0.1, -1.0, -1.0] gives value: 0.9900498337491681
 
-max value for this generation: 1.0
+max value for this generation: 0.9900498337491681
 
 INFO about generation 10:
-Individual [0.9, 0.9] gives value: 0.19789869908361465
-Individual [0.9, 0.9] gives value: 0.19789869908361465
-Individual [0.8, 0.9] gives value: 0.23457028809379762
-Individual [0.8, 0.9] gives value: 0.23457028809379762
-Individual [0.9, 0.7] gives value: 0.2725317930340126
-Individual [1.0, 0.1] gives value: 0.3642189795715233
-Individual [0.4, 0.9] gives value: 0.3790830381033988
-Individual [0.8, 0.5] gives value: 0.41065575275234545
-Individual [0.8, 0.5] gives value: 0.41065575275234545
-Individual [0.2, 0.9] gives value: 0.42741493194872665
-Individual [0.0, 0.9] gives value: 0.4448580662229411
-Individual [0.3, 0.8] gives value: 0.4819089900902024
-Individual [0.3, 0.8] gives value: 0.4819089900902024
-Individual [0.8, 0.3] gives value: 0.4819089900902024
-Individual [0.5, 0.6] gives value: 0.5433508690744998
-Individual [0.5, 0.4] gives value: 0.6636502501363194
-Individual [0.2, 0.4] gives value: 0.8187307530779818
-Individual [0.1, 0.4] gives value: 0.8436648165963836
-Individual [0.0, 0.2] gives value: 0.9607894391523232
-Individual [0.0, 0.0] gives value: 1.0
+Individual [0.9, 0.9, -1.0, -1.0] gives value: 0.19789869908361465
+Individual [0.8, 0.6, -1.0, -1.0] gives value: 0.36787944117144233
+Individual [0.8, 0.6, -1.0, -1.0] gives value: 0.36787944117144233
+Individual [0.3, 0.9, -1.0, -1.0] gives value: 0.4065696597405991
+Individual [0.2, 0.9, -1.0, -1.0] gives value: 0.42741493194872665
+Individual [0.7, 0.6, -1.0, -1.0] gives value: 0.4274149319487267
+Individual [0.4, 0.8, -1.0, -1.0] gives value: 0.4493289641172215
+Individual [0.5, 0.7, -1.0, -1.0] gives value: 0.4771139155210344
+Individual [0.7, 0.4, -1.0, -1.0] gives value: 0.522045776761016
+Individual [0.7, 0.3, -1.0, -1.0] gives value: 0.559898366565402
+Individual [0.3, 0.5, -1.0, -1.0] gives value: 0.7117703227626098
+Individual [0.2, 0.5, -1.0, -1.0] gives value: 0.7482635675785652
+Individual [0.5, 0.2, -1.0, -1.0] gives value: 0.7482635675785652
+Individual [0.5, 0.2, -1.0, -1.0] gives value: 0.7482635675785652
+Individual [0.5, 0.0, -1.0, -1.0] gives value: 0.7788007830714049
+Individual [0.2, 0.4, -1.0, -1.0] gives value: 0.8187307530779818
+Individual [0.4, 0.1, -1.0, -1.0] gives value: 0.8436648165963836
+Individual [0.3, 0.2, -1.0, -1.0] gives value: 0.8780954309205613
+Individual [0.1, 0.2, -1.0, -1.0] gives value: 0.951229424500714
+Individual [0.0, 0.1, -1.0, -1.0] gives value: 0.9900498337491681
 
-max value for this generation: 1.0
+max value for this generation: 0.9900498337491681
 
 INFO about generation 11:
-Individual [0.8, 1.0] gives value: 0.19398004229089189
-Individual [0.8, 0.9] gives value: 0.23457028809379762
-Individual [0.9, 0.7] gives value: 0.2725317930340126
-Individual [0.9, 0.7] gives value: 0.2725317930340126
-Individual [0.8, 0.7] gives value: 0.3230332564222529
-Individual [0.5, 0.9] gives value: 0.3464558103300574
-Individual [0.3, 0.9] gives value: 0.4065696597405991
-Individual [0.5, 0.8] gives value: 0.41065575275234545
-Individual [0.4, 0.8] gives value: 0.4493289641172215
-Individual [0.5, 0.7] gives value: 0.4771139155210344
-Individual [0.8, 0.3] gives value: 0.4819089900902024
-Individual [0.2, 0.8] gives value: 0.5066169923655895
-Individual [0.3, 0.6] gives value: 0.6376281516217733
-Individual [0.3, 0.6] gives value: 0.6376281516217733
-Individual [0.6, 0.2] gives value: 0.6703200460356393
-Individual [0.6, 0.1] gives value: 0.6907343306373547
-Individual [0.3, 0.5] gives value: 0.7117703227626098
-Individual [0.3, 0.3] gives value: 0.835270211411272
-Individual [0.1, 0.1] gives value: 0.9801986733067553
-Individual [0.0, 0.0] gives value: 1.0
+Individual [0.8, 1.0, -1.0, -1.0] gives value: 0.19398004229089189
+Individual [0.8, 1.0, -1.0, -1.0] gives value: 0.19398004229089189
+Individual [0.8, 1.0, -1.0, -1.0] gives value: 0.19398004229089189
+Individual [0.8, 0.9, -1.0, -1.0] gives value: 0.23457028809379762
+Individual [0.5, 1.0, -1.0, -1.0] gives value: 0.2865047968601901
+Individual [0.9, 0.5, -1.0, -1.0] gives value: 0.3464558103300574
+Individual [0.1, 1.0, -1.0, -1.0] gives value: 0.3642189795715233
+Individual [0.7, 0.5, -1.0, -1.0] gives value: 0.4771139155210344
+Individual [0.6, 0.6, -1.0, -1.0] gives value: 0.4867522559599717
+Individual [0.8, 0.1, -1.0, -1.0] gives value: 0.5220457767610159
+Individual [0.7, 0.3, -1.0, -1.0] gives value: 0.559898366565402
+Individual [0.7, 0.2, -1.0, -1.0] gives value: 0.5886049696783553
+Individual [0.6, 0.4, -1.0, -1.0] gives value: 0.5945205479701944
+Individual [0.1, 0.7, -1.0, -1.0] gives value: 0.6065306597126334
+Individual [0.1, 0.6, -1.0, -1.0] gives value: 0.6907343306373547
+Individual [0.6, 0.1, -1.0, -1.0] gives value: 0.6907343306373547
+Individual [0.3, 0.4, -1.0, -1.0] gives value: 0.7788007830714049
+Individual [0.4, 0.1, -1.0, -1.0] gives value: 0.8436648165963836
+Individual [0.2, 0.2, -1.0, -1.0] gives value: 0.9231163463866358
+Individual [0.0, 0.1, -1.0, -1.0] gives value: 0.9900498337491681
 
-max value for this generation: 1.0
+max value for this generation: 0.9900498337491681
 
 INFO about generation 12:
-Individual [0.9, 0.9] gives value: 0.19789869908361465
-Individual [0.9, 0.6] gives value: 0.31036694126548503
-Individual [0.7, 0.7] gives value: 0.37531109885139957
-Individual [0.3, 0.9] gives value: 0.4065696597405991
-Individual [0.2, 0.9] gives value: 0.42741493194872665
-Individual [0.3, 0.8] gives value: 0.4819089900902024
-Individual [0.3, 0.8] gives value: 0.4819089900902024
-Individual [0.6, 0.6] gives value: 0.4867522559599717
-Individual [0.6, 0.5] gives value: 0.5433508690744998
-Individual [0.3, 0.7] gives value: 0.559898366565402
-Individual [0.6, 0.2] gives value: 0.6703200460356393
-Individual [0.5, 0.3] gives value: 0.7117703227626098
-Individual [0.4, 0.2] gives value: 0.8187307530779818
-Individual [0.4, 0.1] gives value: 0.8436648165963836
-Individual [0.0, 0.4] gives value: 0.8521437889662113
-Individual [0.0, 0.4] gives value: 0.8521437889662113
-Individual [0.3, 0.2] gives value: 0.8780954309205613
-Individual [0.2, 0.3] gives value: 0.8780954309205613
-Individual [0.2, 0.1] gives value: 0.951229424500714
-Individual [0.0, 0.0] gives value: 1.0
+Individual [1.0, 0.8, -1.0, -1.0] gives value: 0.19398004229089189
+Individual [1.0, 0.2, -1.0, -1.0] gives value: 0.35345468195878016
+Individual [0.8, 0.6, -1.0, -1.0] gives value: 0.36787944117144233
+Individual [0.9, 0.1, -1.0, -1.0] gives value: 0.44043165450599925
+Individual [0.1, 0.9, -1.0, -1.0] gives value: 0.44043165450599925
+Individual [0.9, 0.1, -1.0, -1.0] gives value: 0.44043165450599925
+Individual [0.9, 0.0, -1.0, -1.0] gives value: 0.4448580662229411
+Individual [0.8, 0.4, -1.0, -1.0] gives value: 0.4493289641172215
+Individual [0.8, 0.4, -1.0, -1.0] gives value: 0.4493289641172215
+Individual [0.7, 0.5, -1.0, -1.0] gives value: 0.4771139155210344
+Individual [0.2, 0.8, -1.0, -1.0] gives value: 0.5066169923655895
+Individual [0.8, 0.1, -1.0, -1.0] gives value: 0.5220457767610159
+Individual [0.2, 0.7, -1.0, -1.0] gives value: 0.5886049696783553
+Individual [0.6, 0.4, -1.0, -1.0] gives value: 0.5945205479701944
+Individual [0.4, 0.5, -1.0, -1.0] gives value: 0.6636502501363194
+Individual [0.4, 0.5, -1.0, -1.0] gives value: 0.6636502501363194
+Individual [0.4, 0.5, -1.0, -1.0] gives value: 0.6636502501363194
+Individual [0.3, 0.5, -1.0, -1.0] gives value: 0.7117703227626098
+Individual [0.1, 0.2, -1.0, -1.0] gives value: 0.951229424500714
+Individual [0.0, 0.1, -1.0, -1.0] gives value: 0.9900498337491681
 
-max value for this generation: 1.0
+max value for this generation: 0.9900498337491681
 
 INFO about generation 13:
-Individual [0.9, 1.0] gives value: 0.16365413680270405
-Individual [0.9, 0.9] gives value: 0.19789869908361465
-Individual [0.5, 1.0] gives value: 0.2865047968601901
-Individual [0.5, 1.0] gives value: 0.2865047968601901
-Individual [0.8, 0.7] gives value: 0.3230332564222529
-Individual [0.5, 0.9] gives value: 0.3464558103300574
-Individual [0.1, 1.0] gives value: 0.3642189795715233
-Individual [0.8, 0.5] gives value: 0.41065575275234545
-Individual [0.1, 0.9] gives value: 0.44043165450599925
-Individual [0.5, 0.7] gives value: 0.4771139155210344
-Individual [0.5, 0.4] gives value: 0.6636502501363194
-Individual [0.5, 0.4] gives value: 0.6636502501363194
-Individual [0.2, 0.6] gives value: 0.6703200460356393
-Individual [0.6, 0.1] gives value: 0.6907343306373547
-Individual [0.1, 0.6] gives value: 0.6907343306373547
-Individual [0.4, 0.4] gives value: 0.7261490370736908
-Individual [0.2, 0.4] gives value: 0.8187307530779818
-Individual [0.3, 0.0] gives value: 0.9139311852712282
-Individual [0.2, 0.0] gives value: 0.9607894391523232
-Individual [0.0, 0.0] gives value: 1.0
+Individual [1.0, 0.7, -1.0, -1.0] gives value: 0.22537265553943872
+Individual [0.7, 0.9, -1.0, -1.0] gives value: 0.2725317930340126
+Individual [0.4, 1.0, -1.0, -1.0] gives value: 0.31348618088260527
+Individual [0.9, 0.5, -1.0, -1.0] gives value: 0.3464558103300574
+Individual [0.5, 0.8, -1.0, -1.0] gives value: 0.41065575275234545
+Individual [0.8, 0.5, -1.0, -1.0] gives value: 0.41065575275234545
+Individual [0.8, 0.4, -1.0, -1.0] gives value: 0.4493289641172215
+Individual [0.7, 0.5, -1.0, -1.0] gives value: 0.4771139155210344
+Individual [0.8, 0.3, -1.0, -1.0] gives value: 0.4819089900902024
+Individual [0.4, 0.7, -1.0, -1.0] gives value: 0.522045776761016
+Individual [0.1, 0.7, -1.0, -1.0] gives value: 0.6065306597126334
+Individual [0.1, 0.7, -1.0, -1.0] gives value: 0.6065306597126334
+Individual [0.3, 0.6, -1.0, -1.0] gives value: 0.6376281516217733
+Individual [0.5, 0.4, -1.0, -1.0] gives value: 0.6636502501363194
+Individual [0.6, 0.1, -1.0, -1.0] gives value: 0.6907343306373547
+Individual [0.4, 0.4, -1.0, -1.0] gives value: 0.7261490370736908
+Individual [0.0, 0.5, -1.0, -1.0] gives value: 0.7788007830714049
+Individual [0.3, 0.1, -1.0, -1.0] gives value: 0.9048374180359595
+Individual [0.2, 0.1, -1.0, -1.0] gives value: 0.951229424500714
+Individual [0.0, 0.1, -1.0, -1.0] gives value: 0.9900498337491681
 
-max value for this generation: 1.0
+max value for this generation: 0.9900498337491681
 
 INFO about generation 14:
-Individual [1.0, 0.9] gives value: 0.16365413680270405
-Individual [0.9, 0.8] gives value: 0.23457028809379762
-Individual [0.8, 0.9] gives value: 0.23457028809379762
-Individual [0.6, 1.0] gives value: 0.25666077695355594
-Individual [1.0, 0.4] gives value: 0.31348618088260527
-Individual [0.9, 0.3] gives value: 0.4065696597405991
-Individual [0.5, 0.8] gives value: 0.41065575275234545
-Individual [0.9, 0.1] gives value: 0.44043165450599925
-Individual [0.8, 0.3] gives value: 0.4819089900902024
-Individual [0.8, 0.1] gives value: 0.5220457767610159
-Individual [0.7, 0.4] gives value: 0.522045776761016
-Individual [0.5, 0.5] gives value: 0.6065306597126334
-Individual [0.6, 0.1] gives value: 0.6907343306373547
-Individual [0.5, 0.1] gives value: 0.7710515858035663
-Individual [0.3, 0.4] gives value: 0.7788007830714049
-Individual [0.4, 0.2] gives value: 0.8187307530779818
-Individual [0.0, 0.4] gives value: 0.8521437889662113
-Individual [0.0, 0.2] gives value: 0.9607894391523232
-Individual [0.2, 0.0] gives value: 0.9607894391523232
-Individual [0.0, 0.0] gives value: 1.0
+Individual [0.9, 0.8, -1.0, -1.0] gives value: 0.23457028809379762
+Individual [0.5, 1.0, -1.0, -1.0] gives value: 0.2865047968601901
+Individual [1.0, 0.2, -1.0, -1.0] gives value: 0.35345468195878016
+Individual [0.0, 0.8, -1.0, -1.0] gives value: 0.5272924240430485
+Individual [0.6, 0.5, -1.0, -1.0] gives value: 0.5433508690744998
+Individual [0.7, 0.3, -1.0, -1.0] gives value: 0.559898366565402
+Individual [0.1, 0.7, -1.0, -1.0] gives value: 0.6065306597126334
+Individual [0.7, 0.0, -1.0, -1.0] gives value: 0.6126263941844161
+Individual [0.3, 0.6, -1.0, -1.0] gives value: 0.6376281516217733
+Individual [0.3, 0.5, -1.0, -1.0] gives value: 0.7117703227626098
+Individual [0.5, 0.3, -1.0, -1.0] gives value: 0.7117703227626098
+Individual [0.5, 0.2, -1.0, -1.0] gives value: 0.7482635675785652
+Individual [0.1, 0.5, -1.0, -1.0] gives value: 0.7710515858035663
+Individual [0.5, 0.1, -1.0, -1.0] gives value: 0.7710515858035663
+Individual [0.0, 0.5, -1.0, -1.0] gives value: 0.7788007830714049
+Individual [0.4, 0.2, -1.0, -1.0] gives value: 0.8187307530779818
+Individual [0.2, 0.3, -1.0, -1.0] gives value: 0.8780954309205613
+Individual [0.1, 0.2, -1.0, -1.0] gives value: 0.951229424500714
+Individual [0.1, 0.1, -1.0, -1.0] gives value: 0.9801986733067553
+Individual [0.0, 0.1, -1.0, -1.0] gives value: 0.9900498337491681
 
-max value for this generation: 1.0
+max value for this generation: 0.9900498337491681
 
 INFO about generation 15:
-Individual [0.7, 1.0] gives value: 0.22537265553943872
-Individual [0.9, 0.6] gives value: 0.31036694126548503
-Individual [0.7, 0.8] gives value: 0.3230332564222529
-Individual [1.0, 0.1] gives value: 0.3642189795715233
-Individual [0.8, 0.6] gives value: 0.36787944117144233
-Individual [0.6, 0.8] gives value: 0.36787944117144233
-Individual [0.5, 0.8] gives value: 0.41065575275234545
-Individual [0.7, 0.6] gives value: 0.4274149319487267
-Individual [0.9, 0.1] gives value: 0.44043165450599925
-Individual [0.9, 0.1] gives value: 0.44043165450599925
-Individual [0.8, 0.1] gives value: 0.5220457767610159
-Individual [0.1, 0.8] gives value: 0.5220457767610159
-Individual [0.3, 0.7] gives value: 0.559898366565402
-Individual [0.2, 0.7] gives value: 0.5886049696783553
-Individual [0.6, 0.1] gives value: 0.6907343306373547
-Individual [0.4, 0.3] gives value: 0.7788007830714049
-Individual [0.4, 0.1] gives value: 0.8436648165963836
-Individual [0.1, 0.2] gives value: 0.951229424500714
-Individual [0.1, 0.1] gives value: 0.9801986733067553
-Individual [0.0, 0.0] gives value: 1.0
+Individual [1.0, 0.9, -1.0, -1.0] gives value: 0.16365413680270405
+Individual [0.8, 1.0, -1.0, -1.0] gives value: 0.19398004229089189
+Individual [0.2, 0.9, -1.0, -1.0] gives value: 0.42741493194872665
+Individual [0.9, 0.0, -1.0, -1.0] gives value: 0.4448580662229411
+Individual [0.7, 0.5, -1.0, -1.0] gives value: 0.4771139155210344
+Individual [0.3, 0.8, -1.0, -1.0] gives value: 0.4819089900902024
+Individual [0.4, 0.6, -1.0, -1.0] gives value: 0.5945205479701944
+Individual [0.7, 0.0, -1.0, -1.0] gives value: 0.6126263941844161
+Individual [0.7, 0.0, -1.0, -1.0] gives value: 0.6126263941844161
+Individual [0.7, 0.0, -1.0, -1.0] gives value: 0.6126263941844161
+Individual [0.5, 0.1, -1.0, -1.0] gives value: 0.7710515858035663
+Individual [0.0, 0.5, -1.0, -1.0] gives value: 0.7788007830714049
+Individual [0.0, 0.5, -1.0, -1.0] gives value: 0.7788007830714049
+Individual [0.3, 0.3, -1.0, -1.0] gives value: 0.835270211411272
+Individual [0.3, 0.3, -1.0, -1.0] gives value: 0.835270211411272
+Individual [0.4, 0.0, -1.0, -1.0] gives value: 0.8521437889662113
+Individual [0.0, 0.4, -1.0, -1.0] gives value: 0.8521437889662113
+Individual [0.3, 0.2, -1.0, -1.0] gives value: 0.8780954309205613
+Individual [0.1, 0.0, -1.0, -1.0] gives value: 0.9900498337491681
+Individual [0.0, 0.1, -1.0, -1.0] gives value: 0.9900498337491681
 
-max value for this generation: 1.0
+max value for this generation: 0.9900498337491681
 
 INFO about generation 16:
-Individual [0.7, 1.0] gives value: 0.22537265553943872
-Individual [0.6, 1.0] gives value: 0.25666077695355594
-Individual [0.9, 0.7] gives value: 0.2725317930340126
-Individual [0.6, 0.9] gives value: 0.31036694126548503
-Individual [1.0, 0.4] gives value: 0.31348618088260527
-Individual [0.7, 0.7] gives value: 0.37531109885139957
-Individual [0.3, 0.9] gives value: 0.4065696597405991
-Individual [0.7, 0.6] gives value: 0.4274149319487267
-Individual [0.1, 0.9] gives value: 0.44043165450599925
-Individual [0.7, 0.5] gives value: 0.4771139155210344
-Individual [0.8, 0.3] gives value: 0.4819089900902024
-Individual [0.7, 0.1] gives value: 0.6065306597126334
-Individual [0.1, 0.7] gives value: 0.6065306597126334
-Individual [0.5, 0.2] gives value: 0.7482635675785652
-Individual [0.1, 0.5] gives value: 0.7710515858035663
-Individual [0.3, 0.4] gives value: 0.7788007830714049
-Individual [0.1, 0.3] gives value: 0.9048374180359595
-Individual [0.1, 0.2] gives value: 0.951229424500714
-Individual [0.0, 0.0] gives value: 1.0
-Individual [0.0, 0.0] gives value: 1.0
+Individual [1.0, 0.9, -1.0, -1.0] gives value: 0.16365413680270405
+Individual [0.8, 0.9, -1.0, -1.0] gives value: 0.23457028809379762
+Individual [0.9, 0.6, -1.0, -1.0] gives value: 0.31036694126548503
+Individual [1.0, 0.4, -1.0, -1.0] gives value: 0.31348618088260527
+Individual [0.8, 0.6, -1.0, -1.0] gives value: 0.36787944117144233
+Individual [0.7, 0.7, -1.0, -1.0] gives value: 0.37531109885139957
+Individual [0.0, 0.9, -1.0, -1.0] gives value: 0.4448580662229411
+Individual [0.8, 0.3, -1.0, -1.0] gives value: 0.4819089900902024
+Individual [0.6, 0.6, -1.0, -1.0] gives value: 0.4867522559599717
+Individual [0.2, 0.8, -1.0, -1.0] gives value: 0.5066169923655895
+Individual [0.2, 0.8, -1.0, -1.0] gives value: 0.5066169923655895
+Individual [0.6, 0.3, -1.0, -1.0] gives value: 0.6376281516217733
+Individual [0.6, 0.2, -1.0, -1.0] gives value: 0.6703200460356393
+Individual [0.2, 0.6, -1.0, -1.0] gives value: 0.6703200460356393
+Individual [0.6, 0.1, -1.0, -1.0] gives value: 0.6907343306373547
+Individual [0.3, 0.4, -1.0, -1.0] gives value: 0.7788007830714049
+Individual [0.1, 0.4, -1.0, -1.0] gives value: 0.8436648165963836
+Individual [0.1, 0.3, -1.0, -1.0] gives value: 0.9048374180359595
+Individual [0.1, 0.3, -1.0, -1.0] gives value: 0.9048374180359595
+Individual [0.0, 0.1, -1.0, -1.0] gives value: 0.9900498337491681
 
-max value for this generation: 1.0
+max value for this generation: 0.9900498337491681
 
 INFO about generation 17:
-Individual [0.7, 1.0] gives value: 0.22537265553943872
-Individual [0.6, 0.9] gives value: 0.31036694126548503
-Individual [0.3, 1.0] gives value: 0.33621649370673334
-Individual [1.0, 0.1] gives value: 0.3642189795715233
-Individual [0.9, 0.4] gives value: 0.3790830381033988
-Individual [0.4, 0.9] gives value: 0.3790830381033988
-Individual [0.6, 0.7] gives value: 0.4274149319487267
-Individual [0.9, 0.1] gives value: 0.44043165450599925
-Individual [0.9, 0.0] gives value: 0.4448580662229411
-Individual [0.4, 0.8] gives value: 0.4493289641172215
-Individual [0.8, 0.2] gives value: 0.5066169923655895
-Individual [0.3, 0.7] gives value: 0.559898366565402
-Individual [0.6, 0.4] gives value: 0.5945205479701944
-Individual [0.3, 0.6] gives value: 0.6376281516217733
-Individual [0.3, 0.6] gives value: 0.6376281516217733
-Individual [0.3, 0.5] gives value: 0.7117703227626098
-Individual [0.5, 0.1] gives value: 0.7710515858035663
-Individual [0.3, 0.3] gives value: 0.835270211411272
-Individual [0.2, 0.0] gives value: 0.9607894391523232
-Individual [0.0, 0.0] gives value: 1.0
+Individual [0.7, 0.9, -1.0, -1.0] gives value: 0.2725317930340126
+Individual [0.9, 0.7, -1.0, -1.0] gives value: 0.2725317930340126
+Individual [0.5, 1.0, -1.0, -1.0] gives value: 0.2865047968601901
+Individual [0.7, 0.8, -1.0, -1.0] gives value: 0.3230332564222529
+Individual [0.8, 0.5, -1.0, -1.0] gives value: 0.41065575275234545
+Individual [0.8, 0.5, -1.0, -1.0] gives value: 0.41065575275234545
+Individual [0.4, 0.8, -1.0, -1.0] gives value: 0.4493289641172215
+Individual [0.2, 0.8, -1.0, -1.0] gives value: 0.5066169923655895
+Individual [0.8, 0.0, -1.0, -1.0] gives value: 0.5272924240430485
+Individual [0.8, 0.0, -1.0, -1.0] gives value: 0.5272924240430485
+Individual [0.6, 0.4, -1.0, -1.0] gives value: 0.5945205479701944
+Individual [0.0, 0.7, -1.0, -1.0] gives value: 0.6126263941844161
+Individual [0.3, 0.6, -1.0, -1.0] gives value: 0.6376281516217733
+Individual [0.4, 0.3, -1.0, -1.0] gives value: 0.7788007830714049
+Individual [0.4, 0.3, -1.0, -1.0] gives value: 0.7788007830714049
+Individual [0.1, 0.4, -1.0, -1.0] gives value: 0.8436648165963836
+Individual [0.4, 0.0, -1.0, -1.0] gives value: 0.8521437889662113
+Individual [0.2, 0.2, -1.0, -1.0] gives value: 0.9231163463866358
+Individual [0.1, 0.0, -1.0, -1.0] gives value: 0.9900498337491681
+Individual [0.0, 0.1, -1.0, -1.0] gives value: 0.9900498337491681
 
-max value for this generation: 1.0
+max value for this generation: 0.9900498337491681
 
 INFO about generation 18:
-Individual [0.8, 0.9] gives value: 0.23457028809379762
-Individual [0.8, 0.9] gives value: 0.23457028809379762
-Individual [0.8, 0.5] gives value: 0.41065575275234545
-Individual [0.6, 0.6] gives value: 0.4867522559599717
-Individual [0.7, 0.4] gives value: 0.522045776761016
-Individual [0.5, 0.6] gives value: 0.5433508690744998
-Individual [0.7, 0.3] gives value: 0.559898366565402
-Individual [0.3, 0.6] gives value: 0.6376281516217733
-Individual [0.5, 0.4] gives value: 0.6636502501363194
-Individual [0.0, 0.6] gives value: 0.697676326071031
-Individual [0.6, 0.0] gives value: 0.697676326071031
-Individual [0.1, 0.5] gives value: 0.7710515858035663
-Individual [0.1, 0.4] gives value: 0.8436648165963836
-Individual [0.4, 0.1] gives value: 0.8436648165963836
-Individual [0.0, 0.4] gives value: 0.8521437889662113
-Individual [0.2, 0.3] gives value: 0.8780954309205613
-Individual [0.1, 0.3] gives value: 0.9048374180359595
-Individual [0.2, 0.2] gives value: 0.9231163463866358
-Individual [0.1, 0.2] gives value: 0.951229424500714
-Individual [0.0, 0.0] gives value: 1.0
+Individual [0.4, 1.0, -1.0, -1.0] gives value: 0.31348618088260527
+Individual [0.9, 0.1, -1.0, -1.0] gives value: 0.44043165450599925
+Individual [0.9, 0.1, -1.0, -1.0] gives value: 0.44043165450599925
+Individual [0.0, 0.9, -1.0, -1.0] gives value: 0.4448580662229411
+Individual [0.5, 0.7, -1.0, -1.0] gives value: 0.4771139155210344
+Individual [0.8, 0.3, -1.0, -1.0] gives value: 0.4819089900902024
+Individual [0.8, 0.0, -1.0, -1.0] gives value: 0.5272924240430485
+Individual [0.5, 0.6, -1.0, -1.0] gives value: 0.5433508690744998
+Individual [0.5, 0.6, -1.0, -1.0] gives value: 0.5433508690744998
+Individual [0.3, 0.6, -1.0, -1.0] gives value: 0.6376281516217733
+Individual [0.4, 0.5, -1.0, -1.0] gives value: 0.6636502501363194
+Individual [0.6, 0.2, -1.0, -1.0] gives value: 0.6703200460356393
+Individual [0.2, 0.5, -1.0, -1.0] gives value: 0.7482635675785652
+Individual [0.3, 0.4, -1.0, -1.0] gives value: 0.7788007830714049
+Individual [0.4, 0.2, -1.0, -1.0] gives value: 0.8187307530779818
+Individual [0.2, 0.4, -1.0, -1.0] gives value: 0.8187307530779818
+Individual [0.1, 0.4, -1.0, -1.0] gives value: 0.8436648165963836
+Individual [0.3, 0.0, -1.0, -1.0] gives value: 0.9139311852712282
+Individual [0.2, 0.0, -1.0, -1.0] gives value: 0.9607894391523232
+Individual [0.0, 0.1, -1.0, -1.0] gives value: 0.9900498337491681
 
-max value for this generation: 1.0
+max value for this generation: 0.9900498337491681
 
 INFO about generation 19:
-Individual [0.6, 1.0] gives value: 0.25666077695355594
-Individual [0.8, 0.8] gives value: 0.2780373004531941
-Individual [0.5, 1.0] gives value: 0.2865047968601901
-Individual [0.8, 0.7] gives value: 0.3230332564222529
-Individual [0.3, 1.0] gives value: 0.33621649370673334
-Individual [0.9, 0.5] gives value: 0.3464558103300574
-Individual [0.9, 0.3] gives value: 0.4065696597405991
-Individual [0.6, 0.7] gives value: 0.4274149319487267
-Individual [0.9, 0.1] gives value: 0.44043165450599925
-Individual [0.7, 0.5] gives value: 0.4771139155210344
-Individual [0.7, 0.5] gives value: 0.4771139155210344
-Individual [0.5, 0.7] gives value: 0.4771139155210344
-Individual [0.5, 0.7] gives value: 0.4771139155210344
-Individual [0.6, 0.6] gives value: 0.4867522559599717
-Individual [0.1, 0.8] gives value: 0.5220457767610159
-Individual [0.1, 0.8] gives value: 0.5220457767610159
-Individual [0.2, 0.7] gives value: 0.5886049696783553
-Individual [0.2, 0.6] gives value: 0.6703200460356393
-Individual [0.5, 0.3] gives value: 0.7117703227626098
-Individual [0.0, 0.0] gives value: 1.0
+Individual [0.8, 1.0, -1.0, -1.0] gives value: 0.19398004229089189
+Individual [0.8, 1.0, -1.0, -1.0] gives value: 0.19398004229089189
+Individual [0.8, 0.9, -1.0, -1.0] gives value: 0.23457028809379762
+Individual [0.6, 0.9, -1.0, -1.0] gives value: 0.31036694126548503
+Individual [0.9, 0.6, -1.0, -1.0] gives value: 0.31036694126548503
+Individual [1.0, 0.3, -1.0, -1.0] gives value: 0.33621649370673334
+Individual [0.9, 0.0, -1.0, -1.0] gives value: 0.4448580662229411
+Individual [0.8, 0.4, -1.0, -1.0] gives value: 0.4493289641172215
+Individual [0.2, 0.8, -1.0, -1.0] gives value: 0.5066169923655895
+Individual [0.3, 0.6, -1.0, -1.0] gives value: 0.6376281516217733
+Individual [0.2, 0.6, -1.0, -1.0] gives value: 0.6703200460356393
+Individual [0.2, 0.6, -1.0, -1.0] gives value: 0.6703200460356393
+Individual [0.1, 0.6, -1.0, -1.0] gives value: 0.6907343306373547
+Individual [0.1, 0.6, -1.0, -1.0] gives value: 0.6907343306373547
+Individual [0.4, 0.3, -1.0, -1.0] gives value: 0.7788007830714049
+Individual [0.2, 0.4, -1.0, -1.0] gives value: 0.8187307530779818
+Individual [0.4, 0.0, -1.0, -1.0] gives value: 0.8521437889662113
+Individual [0.3, 0.0, -1.0, -1.0] gives value: 0.9139311852712282
+Individual [0.3, 0.0, -1.0, -1.0] gives value: 0.9139311852712282
+Individual [0.0, 0.1, -1.0, -1.0] gives value: 0.9900498337491681
 
-max value for this generation: 1.0
+max value for this generation: 0.9900498337491681
 
 INFO about generation 20:
-Individual [0.8, 1.0] gives value: 0.19398004229089189
-Individual [0.8, 0.9] gives value: 0.23457028809379762
-Individual [0.7, 0.9] gives value: 0.2725317930340126
-Individual [0.9, 0.6] gives value: 0.31036694126548503
-Individual [0.5, 0.9] gives value: 0.3464558103300574
-Individual [0.8, 0.5] gives value: 0.41065575275234545
-Individual [0.9, 0.1] gives value: 0.44043165450599925
-Individual [0.8, 0.4] gives value: 0.4493289641172215
-Individual [0.8, 0.2] gives value: 0.5066169923655895
-Individual [0.8, 0.1] gives value: 0.5220457767610159
-Individual [0.4, 0.6] gives value: 0.5945205479701944
-Individual [0.6, 0.3] gives value: 0.6376281516217733
-Individual [0.0, 0.6] gives value: 0.697676326071031
-Individual [0.3, 0.5] gives value: 0.7117703227626098
-Individual [0.4, 0.4] gives value: 0.7261490370736908
-Individual [0.1, 0.4] gives value: 0.8436648165963836
-Individual [0.0, 0.4] gives value: 0.8521437889662113
-Individual [0.2, 0.1] gives value: 0.951229424500714
-Individual [0.1, 0.1] gives value: 0.9801986733067553
-Individual [0.0, 0.0] gives value: 1.0
+Individual [0.7, 1.0, -1.0, -1.0] gives value: 0.22537265553943872
+Individual [0.9, 0.8, -1.0, -1.0] gives value: 0.23457028809379762
+Individual [1.0, 0.4, -1.0, -1.0] gives value: 0.31348618088260527
+Individual [0.7, 0.8, -1.0, -1.0] gives value: 0.3230332564222529
+Individual [0.9, 0.5, -1.0, -1.0] gives value: 0.3464558103300574
+Individual [0.2, 1.0, -1.0, -1.0] gives value: 0.35345468195878016
+Individual [0.1, 0.9, -1.0, -1.0] gives value: 0.44043165450599925
+Individual [0.3, 0.8, -1.0, -1.0] gives value: 0.4819089900902024
+Individual [0.4, 0.7, -1.0, -1.0] gives value: 0.522045776761016
+Individual [0.3, 0.6, -1.0, -1.0] gives value: 0.6376281516217733
+Individual [0.5, 0.4, -1.0, -1.0] gives value: 0.6636502501363194
+Individual [0.2, 0.6, -1.0, -1.0] gives value: 0.6703200460356393
+Individual [0.5, 0.1, -1.0, -1.0] gives value: 0.7710515858035663
+Individual [0.1, 0.5, -1.0, -1.0] gives value: 0.7710515858035663
+Individual [0.4, 0.0, -1.0, -1.0] gives value: 0.8521437889662113
+Individual [0.3, 0.1, -1.0, -1.0] gives value: 0.9048374180359595
+Individual [0.1, 0.3, -1.0, -1.0] gives value: 0.9048374180359595
+Individual [0.0, 0.1, -1.0, -1.0] gives value: 0.9900498337491681
+Individual [0.0, 0.1, -1.0, -1.0] gives value: 0.9900498337491681
+Individual [0.0, 0.1, -1.0, -1.0] gives value: 0.9900498337491681
 
-max value for this generation: 1.0
-
-INFO about generation 21:
-Individual [0.9, 0.8] gives value: 0.23457028809379762
-Individual [0.9, 0.6] gives value: 0.31036694126548503
-Individual [0.7, 0.8] gives value: 0.3230332564222529
-Individual [0.5, 0.9] gives value: 0.3464558103300574
-Individual [0.4, 0.9] gives value: 0.3790830381033988
-Individual [0.8, 0.5] gives value: 0.41065575275234545
-Individual [0.8, 0.5] gives value: 0.41065575275234545
-Individual [0.1, 0.9] gives value: 0.44043165450599925
-Individual [0.5, 0.7] gives value: 0.4771139155210344
-Individual [0.3, 0.8] gives value: 0.4819089900902024
-Individual [0.4, 0.7] gives value: 0.522045776761016
-Individual [0.1, 0.7] gives value: 0.6065306597126334
-Individual [0.7, 0.1] gives value: 0.6065306597126334
-Individual [0.6, 0.3] gives value: 0.6376281516217733
-Individual [0.4, 0.5] gives value: 0.6636502501363194
-Individual [0.6, 0.2] gives value: 0.6703200460356393
-Individual [0.1, 0.5] gives value: 0.7710515858035663
-Individual [0.3, 0.4] gives value: 0.7788007830714049
-Individual [0.3, 0.3] gives value: 0.835270211411272
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 22:
-Individual [0.7, 0.9] gives value: 0.2725317930340126
-Individual [0.8, 0.8] gives value: 0.2780373004531941
-Individual [0.8, 0.8] gives value: 0.2780373004531941
-Individual [0.6, 0.9] gives value: 0.31036694126548503
-Individual [0.9, 0.5] gives value: 0.3464558103300574
-Individual [0.5, 0.8] gives value: 0.41065575275234545
-Individual [0.9, 0.2] gives value: 0.42741493194872665
-Individual [0.9, 0.2] gives value: 0.42741493194872665
-Individual [0.6, 0.7] gives value: 0.4274149319487267
-Individual [0.9, 0.1] gives value: 0.44043165450599925
-Individual [0.9, 0.1] gives value: 0.44043165450599925
-Individual [0.0, 0.7] gives value: 0.6126263941844161
-Individual [0.6, 0.1] gives value: 0.6907343306373547
-Individual [0.5, 0.3] gives value: 0.7117703227626098
-Individual [0.3, 0.5] gives value: 0.7117703227626098
-Individual [0.4, 0.4] gives value: 0.7261490370736908
-Individual [0.4, 0.3] gives value: 0.7788007830714049
-Individual [0.4, 0.1] gives value: 0.8436648165963836
-Individual [0.3, 0.2] gives value: 0.8780954309205613
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 23:
-Individual [0.9, 0.8] gives value: 0.23457028809379762
-Individual [1.0, 0.6] gives value: 0.25666077695355594
-Individual [0.6, 0.9] gives value: 0.31036694126548503
-Individual [0.7, 0.8] gives value: 0.3230332564222529
-Individual [0.1, 1.0] gives value: 0.3642189795715233
-Individual [1.0, 0.1] gives value: 0.3642189795715233
-Individual [0.5, 0.8] gives value: 0.41065575275234545
-Individual [0.2, 0.9] gives value: 0.42741493194872665
-Individual [0.1, 0.9] gives value: 0.44043165450599925
-Individual [0.8, 0.2] gives value: 0.5066169923655895
-Individual [0.8, 0.0] gives value: 0.5272924240430485
-Individual [0.4, 0.6] gives value: 0.5945205479701944
-Individual [0.5, 0.5] gives value: 0.6065306597126334
-Individual [0.7, 0.1] gives value: 0.6065306597126334
-Individual [0.3, 0.6] gives value: 0.6376281516217733
-Individual [0.3, 0.5] gives value: 0.7117703227626098
-Individual [0.4, 0.4] gives value: 0.7261490370736908
-Individual [0.3, 0.4] gives value: 0.7788007830714049
-Individual [0.2, 0.1] gives value: 0.951229424500714
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 24:
-Individual [1.0, 0.8] gives value: 0.19398004229089189
-Individual [0.6, 0.9] gives value: 0.31036694126548503
-Individual [0.7, 0.7] gives value: 0.37531109885139957
-Individual [0.3, 0.9] gives value: 0.4065696597405991
-Individual [0.9, 0.0] gives value: 0.4448580662229411
-Individual [0.4, 0.8] gives value: 0.4493289641172215
-Individual [0.4, 0.8] gives value: 0.4493289641172215
-Individual [0.4, 0.7] gives value: 0.522045776761016
-Individual [0.6, 0.5] gives value: 0.5433508690744998
-Individual [0.7, 0.2] gives value: 0.5886049696783553
-Individual [0.4, 0.5] gives value: 0.6636502501363194
-Individual [0.3, 0.5] gives value: 0.7117703227626098
-Individual [0.3, 0.5] gives value: 0.7117703227626098
-Individual [0.2, 0.5] gives value: 0.7482635675785652
-Individual [0.1, 0.5] gives value: 0.7710515858035663
-Individual [0.3, 0.4] gives value: 0.7788007830714049
-Individual [0.3, 0.4] gives value: 0.7788007830714049
-Individual [0.2, 0.3] gives value: 0.8780954309205613
-Individual [0.1, 0.0] gives value: 0.9900498337491681
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 25:
-Individual [0.9, 0.6] gives value: 0.31036694126548503
-Individual [0.8, 0.7] gives value: 0.3230332564222529
-Individual [0.3, 1.0] gives value: 0.33621649370673334
-Individual [0.9, 0.3] gives value: 0.4065696597405991
-Individual [0.9, 0.2] gives value: 0.42741493194872665
-Individual [0.3, 0.8] gives value: 0.4819089900902024
-Individual [0.8, 0.3] gives value: 0.4819089900902024
-Individual [0.6, 0.5] gives value: 0.5433508690744998
-Individual [0.7, 0.3] gives value: 0.559898366565402
-Individual [0.0, 0.7] gives value: 0.6126263941844161
-Individual [0.6, 0.1] gives value: 0.6907343306373547
-Individual [0.2, 0.5] gives value: 0.7482635675785652
-Individual [0.2, 0.5] gives value: 0.7482635675785652
-Individual [0.1, 0.5] gives value: 0.7710515858035663
-Individual [0.0, 0.5] gives value: 0.7788007830714049
-Individual [0.0, 0.4] gives value: 0.8521437889662113
-Individual [0.4, 0.0] gives value: 0.8521437889662113
-Individual [0.2, 0.3] gives value: 0.8780954309205613
-Individual [0.2, 0.0] gives value: 0.9607894391523232
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 26:
-Individual [0.9, 0.9] gives value: 0.19789869908361465
-Individual [0.8, 0.7] gives value: 0.3230332564222529
-Individual [0.5, 0.9] gives value: 0.3464558103300574
-Individual [0.2, 0.9] gives value: 0.42741493194872665
-Individual [0.7, 0.6] gives value: 0.4274149319487267
-Individual [0.9, 0.0] gives value: 0.4448580662229411
-Individual [0.8, 0.4] gives value: 0.4493289641172215
-Individual [0.4, 0.7] gives value: 0.522045776761016
-Individual [0.0, 0.8] gives value: 0.5272924240430485
-Individual [0.5, 0.6] gives value: 0.5433508690744998
-Individual [0.6, 0.5] gives value: 0.5433508690744998
-Individual [0.2, 0.4] gives value: 0.8187307530779818
-Individual [0.3, 0.3] gives value: 0.835270211411272
-Individual [0.3, 0.3] gives value: 0.835270211411272
-Individual [0.3, 0.1] gives value: 0.9048374180359595
-Individual [0.3, 0.1] gives value: 0.9048374180359595
-Individual [0.3, 0.1] gives value: 0.9048374180359595
-Individual [0.1, 0.2] gives value: 0.951229424500714
-Individual [0.1, 0.1] gives value: 0.9801986733067553
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 27:
-Individual [1.0, 0.9] gives value: 0.16365413680270405
-Individual [1.0, 0.8] gives value: 0.19398004229089189
-Individual [0.8, 0.9] gives value: 0.23457028809379762
-Individual [0.8, 0.8] gives value: 0.2780373004531941
-Individual [0.2, 1.0] gives value: 0.35345468195878016
-Individual [0.9, 0.4] gives value: 0.3790830381033988
-Individual [0.9, 0.1] gives value: 0.44043165450599925
-Individual [0.8, 0.4] gives value: 0.4493289641172215
-Individual [0.8, 0.1] gives value: 0.5220457767610159
-Individual [0.6, 0.4] gives value: 0.5945205479701944
-Individual [0.6, 0.0] gives value: 0.697676326071031
-Individual [0.5, 0.1] gives value: 0.7710515858035663
-Individual [0.2, 0.4] gives value: 0.8187307530779818
-Individual [0.3, 0.3] gives value: 0.835270211411272
-Individual [0.3, 0.1] gives value: 0.9048374180359595
-Individual [0.2, 0.2] gives value: 0.9231163463866358
-Individual [0.2, 0.1] gives value: 0.951229424500714
-Individual [0.2, 0.0] gives value: 0.9607894391523232
-Individual [0.0, 0.1] gives value: 0.9900498337491681
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 28:
-Individual [1.0, 0.7] gives value: 0.22537265553943872
-Individual [0.9, 0.8] gives value: 0.23457028809379762
-Individual [0.8, 0.9] gives value: 0.23457028809379762
-Individual [0.7, 0.8] gives value: 0.3230332564222529
-Individual [0.8, 0.6] gives value: 0.36787944117144233
-Individual [0.8, 0.6] gives value: 0.36787944117144233
-Individual [0.3, 0.9] gives value: 0.4065696597405991
-Individual [0.1, 0.8] gives value: 0.5220457767610159
-Individual [0.2, 0.7] gives value: 0.5886049696783553
-Individual [0.2, 0.7] gives value: 0.5886049696783553
-Individual [0.7, 0.2] gives value: 0.5886049696783553
-Individual [0.2, 0.7] gives value: 0.5886049696783553
-Individual [0.6, 0.3] gives value: 0.6376281516217733
-Individual [0.6, 0.1] gives value: 0.6907343306373547
-Individual [0.1, 0.6] gives value: 0.6907343306373547
-Individual [0.6, 0.1] gives value: 0.6907343306373547
-Individual [0.1, 0.4] gives value: 0.8436648165963836
-Individual [0.2, 0.3] gives value: 0.8780954309205613
-Individual [0.1, 0.1] gives value: 0.9801986733067553
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 29:
-Individual [1.0, 0.8] gives value: 0.19398004229089189
-Individual [0.9, 0.8] gives value: 0.23457028809379762
-Individual [0.9, 0.8] gives value: 0.23457028809379762
-Individual [1.0, 0.6] gives value: 0.25666077695355594
-Individual [0.8, 0.8] gives value: 0.2780373004531941
-Individual [0.5, 1.0] gives value: 0.2865047968601901
-Individual [0.3, 1.0] gives value: 0.33621649370673334
-Individual [0.6, 0.8] gives value: 0.36787944117144233
-Individual [0.8, 0.6] gives value: 0.36787944117144233
-Individual [0.3, 0.9] gives value: 0.4065696597405991
-Individual [0.5, 0.8] gives value: 0.41065575275234545
-Individual [0.5, 0.8] gives value: 0.41065575275234545
-Individual [0.4, 0.8] gives value: 0.4493289641172215
-Individual [0.8, 0.4] gives value: 0.4493289641172215
-Individual [0.7, 0.3] gives value: 0.559898366565402
-Individual [0.6, 0.2] gives value: 0.6703200460356393
-Individual [0.3, 0.2] gives value: 0.8780954309205613
-Individual [0.0, 0.2] gives value: 0.9607894391523232
-Individual [0.1, 0.0] gives value: 0.9900498337491681
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 30:
-Individual [0.8, 0.5] gives value: 0.41065575275234545
-Individual [0.5, 0.8] gives value: 0.41065575275234545
-Individual [0.8, 0.5] gives value: 0.41065575275234545
-Individual [0.2, 0.9] gives value: 0.42741493194872665
-Individual [0.1, 0.9] gives value: 0.44043165450599925
-Individual [0.3, 0.8] gives value: 0.4819089900902024
-Individual [0.6, 0.6] gives value: 0.4867522559599717
-Individual [0.7, 0.4] gives value: 0.522045776761016
-Individual [0.4, 0.7] gives value: 0.522045776761016
-Individual [0.4, 0.7] gives value: 0.522045776761016
-Individual [0.5, 0.6] gives value: 0.5433508690744998
-Individual [0.7, 0.2] gives value: 0.5886049696783553
-Individual [0.5, 0.4] gives value: 0.6636502501363194
-Individual [0.1, 0.6] gives value: 0.6907343306373547
-Individual [0.6, 0.1] gives value: 0.6907343306373547
-Individual [0.4, 0.4] gives value: 0.7261490370736908
-Individual [0.3, 0.4] gives value: 0.7788007830714049
-Individual [0.3, 0.1] gives value: 0.9048374180359595
-Individual [0.1, 0.3] gives value: 0.9048374180359595
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 31:
-Individual [0.9, 1.0] gives value: 0.16365413680270405
-Individual [0.8, 0.8] gives value: 0.2780373004531941
-Individual [0.8, 0.8] gives value: 0.2780373004531941
-Individual [1.0, 0.4] gives value: 0.31348618088260527
-Individual [0.3, 1.0] gives value: 0.33621649370673334
-Individual [0.8, 0.6] gives value: 0.36787944117144233
-Individual [0.6, 0.8] gives value: 0.36787944117144233
-Individual [0.3, 0.9] gives value: 0.4065696597405991
-Individual [0.4, 0.8] gives value: 0.4493289641172215
-Individual [0.8, 0.1] gives value: 0.5220457767610159
-Individual [0.8, 0.0] gives value: 0.5272924240430485
-Individual [0.5, 0.6] gives value: 0.5433508690744998
-Individual [0.3, 0.7] gives value: 0.559898366565402
-Individual [0.5, 0.4] gives value: 0.6636502501363194
-Individual [0.6, 0.2] gives value: 0.6703200460356393
-Individual [0.1, 0.6] gives value: 0.6907343306373547
-Individual [0.5, 0.2] gives value: 0.7482635675785652
-Individual [0.1, 0.4] gives value: 0.8436648165963836
-Individual [0.1, 0.0] gives value: 0.9900498337491681
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 32:
-Individual [1.0, 0.8] gives value: 0.19398004229089189
-Individual [0.8, 0.8] gives value: 0.2780373004531941
-Individual [0.8, 0.7] gives value: 0.3230332564222529
-Individual [1.0, 0.2] gives value: 0.35345468195878016
-Individual [0.9, 0.4] gives value: 0.3790830381033988
-Individual [0.5, 0.8] gives value: 0.41065575275234545
-Individual [0.2, 0.9] gives value: 0.42741493194872665
-Individual [0.6, 0.7] gives value: 0.4274149319487267
-Individual [0.4, 0.8] gives value: 0.4493289641172215
-Individual [0.0, 0.8] gives value: 0.5272924240430485
-Individual [0.7, 0.3] gives value: 0.559898366565402
-Individual [0.2, 0.6] gives value: 0.6703200460356393
-Individual [0.3, 0.5] gives value: 0.7117703227626098
-Individual [0.1, 0.5] gives value: 0.7710515858035663
-Individual [0.4, 0.2] gives value: 0.8187307530779818
-Individual [0.4, 0.2] gives value: 0.8187307530779818
-Individual [0.3, 0.3] gives value: 0.835270211411272
-Individual [0.0, 0.4] gives value: 0.8521437889662113
-Individual [0.1, 0.1] gives value: 0.9801986733067553
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 33:
-Individual [1.0, 1.0] gives value: 0.1353352832366127
-Individual [1.0, 0.9] gives value: 0.16365413680270405
-Individual [1.0, 0.6] gives value: 0.25666077695355594
-Individual [0.6, 1.0] gives value: 0.25666077695355594
-Individual [0.5, 1.0] gives value: 0.2865047968601901
-Individual [0.4, 1.0] gives value: 0.31348618088260527
-Individual [0.5, 0.9] gives value: 0.3464558103300574
-Individual [0.9, 0.4] gives value: 0.3790830381033988
-Individual [0.2, 0.9] gives value: 0.42741493194872665
-Individual [0.6, 0.6] gives value: 0.4867522559599717
-Individual [0.1, 0.8] gives value: 0.5220457767610159
-Individual [0.4, 0.7] gives value: 0.522045776761016
-Individual [0.2, 0.7] gives value: 0.5886049696783553
-Individual [0.5, 0.4] gives value: 0.6636502501363194
-Individual [0.5, 0.3] gives value: 0.7117703227626098
-Individual [0.5, 0.3] gives value: 0.7117703227626098
-Individual [0.4, 0.4] gives value: 0.7261490370736908
-Individual [0.5, 0.0] gives value: 0.7788007830714049
-Individual [0.0, 0.2] gives value: 0.9607894391523232
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 34:
-Individual [0.9, 0.6] gives value: 0.31036694126548503
-Individual [0.6, 0.9] gives value: 0.31036694126548503
-Individual [0.0, 0.9] gives value: 0.4448580662229411
-Individual [0.6, 0.6] gives value: 0.4867522559599717
-Individual [0.6, 0.6] gives value: 0.4867522559599717
-Individual [0.6, 0.6] gives value: 0.4867522559599717
-Individual [0.8, 0.2] gives value: 0.5066169923655895
-Individual [0.6, 0.5] gives value: 0.5433508690744998
-Individual [0.2, 0.7] gives value: 0.5886049696783553
-Individual [0.6, 0.4] gives value: 0.5945205479701944
-Individual [0.5, 0.5] gives value: 0.6065306597126334
-Individual [0.0, 0.7] gives value: 0.6126263941844161
-Individual [0.3, 0.6] gives value: 0.6376281516217733
-Individual [0.3, 0.4] gives value: 0.7788007830714049
-Individual [0.2, 0.4] gives value: 0.8187307530779818
-Individual [0.1, 0.4] gives value: 0.8436648165963836
-Individual [0.2, 0.3] gives value: 0.8780954309205613
-Individual [0.3, 0.1] gives value: 0.9048374180359595
-Individual [0.0, 0.3] gives value: 0.9139311852712282
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 35:
-Individual [0.9, 1.0] gives value: 0.16365413680270405
-Individual [0.9, 0.7] gives value: 0.2725317930340126
-Individual [0.9, 0.7] gives value: 0.2725317930340126
-Individual [0.4, 0.9] gives value: 0.3790830381033988
-Individual [0.9, 0.3] gives value: 0.4065696597405991
-Individual [0.8, 0.5] gives value: 0.41065575275234545
-Individual [0.7, 0.6] gives value: 0.4274149319487267
-Individual [0.6, 0.7] gives value: 0.4274149319487267
-Individual [0.7, 0.5] gives value: 0.4771139155210344
-Individual [0.4, 0.7] gives value: 0.522045776761016
-Individual [0.3, 0.7] gives value: 0.559898366565402
-Individual [0.2, 0.7] gives value: 0.5886049696783553
-Individual [0.5, 0.5] gives value: 0.6065306597126334
-Individual [0.3, 0.6] gives value: 0.6376281516217733
-Individual [0.5, 0.4] gives value: 0.6636502501363194
-Individual [0.3, 0.5] gives value: 0.7117703227626098
-Individual [0.5, 0.2] gives value: 0.7482635675785652
-Individual [0.1, 0.5] gives value: 0.7710515858035663
-Individual [0.2, 0.3] gives value: 0.8780954309205613
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 36:
-Individual [1.0, 0.9] gives value: 0.16365413680270405
-Individual [0.8, 0.9] gives value: 0.23457028809379762
-Individual [0.9, 0.4] gives value: 0.3790830381033988
-Individual [0.2, 0.9] gives value: 0.42741493194872665
-Individual [0.7, 0.6] gives value: 0.4274149319487267
-Individual [0.6, 0.7] gives value: 0.4274149319487267
-Individual [0.8, 0.4] gives value: 0.4493289641172215
-Individual [0.8, 0.4] gives value: 0.4493289641172215
-Individual [0.5, 0.7] gives value: 0.4771139155210344
-Individual [0.8, 0.3] gives value: 0.4819089900902024
-Individual [0.8, 0.1] gives value: 0.5220457767610159
-Individual [0.8, 0.0] gives value: 0.5272924240430485
-Individual [0.7, 0.2] gives value: 0.5886049696783553
-Individual [0.5, 0.5] gives value: 0.6065306597126334
-Individual [0.0, 0.7] gives value: 0.6126263941844161
-Individual [0.5, 0.4] gives value: 0.6636502501363194
-Individual [0.2, 0.3] gives value: 0.8780954309205613
-Individual [0.1, 0.3] gives value: 0.9048374180359595
-Individual [0.0, 0.1] gives value: 0.9900498337491681
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 37:
-Individual [0.7, 0.9] gives value: 0.2725317930340126
-Individual [0.8, 0.8] gives value: 0.2780373004531941
-Individual [0.9, 0.1] gives value: 0.44043165450599925
-Individual [0.9, 0.1] gives value: 0.44043165450599925
-Individual [0.8, 0.4] gives value: 0.4493289641172215
-Individual [0.5, 0.7] gives value: 0.4771139155210344
-Individual [0.8, 0.2] gives value: 0.5066169923655895
-Individual [0.4, 0.7] gives value: 0.522045776761016
-Individual [0.8, 0.0] gives value: 0.5272924240430485
-Individual [0.0, 0.7] gives value: 0.6126263941844161
-Individual [0.7, 0.0] gives value: 0.6126263941844161
-Individual [0.4, 0.5] gives value: 0.6636502501363194
-Individual [0.2, 0.6] gives value: 0.6703200460356393
-Individual [0.1, 0.6] gives value: 0.6907343306373547
-Individual [0.2, 0.5] gives value: 0.7482635675785652
-Individual [0.4, 0.3] gives value: 0.7788007830714049
-Individual [0.4, 0.3] gives value: 0.7788007830714049
-Individual [0.3, 0.0] gives value: 0.9139311852712282
-Individual [0.1, 0.2] gives value: 0.951229424500714
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 38:
-Individual [1.0, 0.8] gives value: 0.19398004229089189
-Individual [1.0, 0.8] gives value: 0.19398004229089189
-Individual [0.9, 0.9] gives value: 0.19789869908361465
-Individual [0.6, 1.0] gives value: 0.25666077695355594
-Individual [0.5, 0.9] gives value: 0.3464558103300574
-Individual [0.5, 0.9] gives value: 0.3464558103300574
-Individual [0.7, 0.7] gives value: 0.37531109885139957
-Individual [0.5, 0.8] gives value: 0.41065575275234545
-Individual [0.6, 0.7] gives value: 0.4274149319487267
-Individual [0.7, 0.6] gives value: 0.4274149319487267
-Individual [0.1, 0.9] gives value: 0.44043165450599925
-Individual [0.5, 0.4] gives value: 0.6636502501363194
-Individual [0.6, 0.2] gives value: 0.6703200460356393
-Individual [0.2, 0.4] gives value: 0.8187307530779818
-Individual [0.3, 0.3] gives value: 0.835270211411272
-Individual [0.3, 0.3] gives value: 0.835270211411272
-Individual [0.4, 0.1] gives value: 0.8436648165963836
-Individual [0.2, 0.2] gives value: 0.9231163463866358
-Individual [0.2, 0.1] gives value: 0.951229424500714
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 39:
-Individual [0.9, 0.8] gives value: 0.23457028809379762
-Individual [0.5, 1.0] gives value: 0.2865047968601901
-Individual [0.6, 0.9] gives value: 0.31036694126548503
-Individual [0.3, 1.0] gives value: 0.33621649370673334
-Individual [0.1, 1.0] gives value: 0.3642189795715233
-Individual [0.6, 0.8] gives value: 0.36787944117144233
-Individual [0.8, 0.6] gives value: 0.36787944117144233
-Individual [0.9, 0.1] gives value: 0.44043165450599925
-Individual [0.5, 0.7] gives value: 0.4771139155210344
-Individual [0.3, 0.7] gives value: 0.559898366565402
-Individual [0.3, 0.6] gives value: 0.6376281516217733
-Individual [0.4, 0.5] gives value: 0.6636502501363194
-Individual [0.4, 0.3] gives value: 0.7788007830714049
-Individual [0.3, 0.3] gives value: 0.835270211411272
-Individual [0.4, 0.1] gives value: 0.8436648165963836
-Individual [0.4, 0.0] gives value: 0.8521437889662113
-Individual [0.3, 0.2] gives value: 0.8780954309205613
-Individual [0.3, 0.2] gives value: 0.8780954309205613
-Individual [0.2, 0.1] gives value: 0.951229424500714
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 40:
-Individual [0.8, 0.9] gives value: 0.23457028809379762
-Individual [0.8, 0.8] gives value: 0.2780373004531941
-Individual [1.0, 0.5] gives value: 0.2865047968601901
-Individual [0.1, 1.0] gives value: 0.3642189795715233
-Individual [0.7, 0.7] gives value: 0.37531109885139957
-Individual [0.3, 0.9] gives value: 0.4065696597405991
-Individual [0.9, 0.2] gives value: 0.42741493194872665
-Individual [0.7, 0.6] gives value: 0.4274149319487267
-Individual [0.5, 0.7] gives value: 0.4771139155210344
-Individual [0.7, 0.2] gives value: 0.5886049696783553
-Individual [0.4, 0.6] gives value: 0.5945205479701944
-Individual [0.5, 0.5] gives value: 0.6065306597126334
-Individual [0.6, 0.3] gives value: 0.6376281516217733
-Individual [0.3, 0.6] gives value: 0.6376281516217733
-Individual [0.2, 0.5] gives value: 0.7482635675785652
-Individual [0.5, 0.0] gives value: 0.7788007830714049
-Individual [0.5, 0.0] gives value: 0.7788007830714049
-Individual [0.3, 0.2] gives value: 0.8780954309205613
-Individual [0.0, 0.2] gives value: 0.9607894391523232
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 41:
-Individual [1.0, 0.9] gives value: 0.16365413680270405
-Individual [0.6, 0.9] gives value: 0.31036694126548503
-Individual [0.8, 0.7] gives value: 0.3230332564222529
-Individual [0.9, 0.4] gives value: 0.3790830381033988
-Individual [0.3, 0.9] gives value: 0.4065696597405991
-Individual [0.3, 0.9] gives value: 0.4065696597405991
-Individual [0.1, 0.9] gives value: 0.44043165450599925
-Individual [0.8, 0.4] gives value: 0.4493289641172215
-Individual [0.8, 0.1] gives value: 0.5220457767610159
-Individual [0.7, 0.4] gives value: 0.522045776761016
-Individual [0.7, 0.0] gives value: 0.6126263941844161
-Individual [0.1, 0.6] gives value: 0.6907343306373547
-Individual [0.5, 0.3] gives value: 0.7117703227626098
-Individual [0.4, 0.2] gives value: 0.8187307530779818
-Individual [0.2, 0.3] gives value: 0.8780954309205613
-Individual [0.2, 0.2] gives value: 0.9231163463866358
-Individual [0.1, 0.2] gives value: 0.951229424500714
-Individual [0.2, 0.0] gives value: 0.9607894391523232
-Individual [0.2, 0.0] gives value: 0.9607894391523232
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 42:
-Individual [1.0, 0.9] gives value: 0.16365413680270405
-Individual [1.0, 0.7] gives value: 0.22537265553943872
-Individual [0.9, 0.7] gives value: 0.2725317930340126
-Individual [1.0, 0.3] gives value: 0.33621649370673334
-Individual [0.9, 0.3] gives value: 0.4065696597405991
-Individual [0.8, 0.5] gives value: 0.41065575275234545
-Individual [0.8, 0.4] gives value: 0.4493289641172215
-Individual [0.5, 0.7] gives value: 0.4771139155210344
-Individual [0.7, 0.5] gives value: 0.4771139155210344
-Individual [0.6, 0.6] gives value: 0.4867522559599717
-Individual [0.2, 0.8] gives value: 0.5066169923655895
-Individual [0.2, 0.8] gives value: 0.5066169923655895
-Individual [0.2, 0.6] gives value: 0.6703200460356393
-Individual [0.5, 0.3] gives value: 0.7117703227626098
-Individual [0.4, 0.4] gives value: 0.7261490370736908
-Individual [0.5, 0.2] gives value: 0.7482635675785652
-Individual [0.5, 0.1] gives value: 0.7710515858035663
-Individual [0.4, 0.3] gives value: 0.7788007830714049
-Individual [0.3, 0.4] gives value: 0.7788007830714049
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 43:
-Individual [0.9, 1.0] gives value: 0.16365413680270405
-Individual [0.8, 0.9] gives value: 0.23457028809379762
-Individual [0.7, 0.9] gives value: 0.2725317930340126
-Individual [0.8, 0.8] gives value: 0.2780373004531941
-Individual [0.9, 0.6] gives value: 0.31036694126548503
-Individual [0.6, 0.8] gives value: 0.36787944117144233
-Individual [0.1, 0.9] gives value: 0.44043165450599925
-Individual [0.0, 0.9] gives value: 0.4448580662229411
-Individual [0.6, 0.6] gives value: 0.4867522559599717
-Individual [0.5, 0.6] gives value: 0.5433508690744998
-Individual [0.4, 0.6] gives value: 0.5945205479701944
-Individual [0.4, 0.6] gives value: 0.5945205479701944
-Individual [0.7, 0.0] gives value: 0.6126263941844161
-Individual [0.6, 0.1] gives value: 0.6907343306373547
-Individual [0.6, 0.0] gives value: 0.697676326071031
-Individual [0.5, 0.2] gives value: 0.7482635675785652
-Individual [0.3, 0.0] gives value: 0.9139311852712282
-Individual [0.2, 0.0] gives value: 0.9607894391523232
-Individual [0.0, 0.1] gives value: 0.9900498337491681
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 44:
-Individual [1.0, 0.8] gives value: 0.19398004229089189
-Individual [0.9, 0.9] gives value: 0.19789869908361465
-Individual [0.8, 0.8] gives value: 0.2780373004531941
-Individual [0.5, 0.9] gives value: 0.3464558103300574
-Individual [1.0, 0.2] gives value: 0.35345468195878016
-Individual [1.0, 0.0] gives value: 0.36787944117144233
-Individual [0.4, 0.9] gives value: 0.3790830381033988
-Individual [0.8, 0.5] gives value: 0.41065575275234545
-Individual [0.6, 0.6] gives value: 0.4867522559599717
-Individual [0.8, 0.2] gives value: 0.5066169923655895
-Individual [0.8, 0.0] gives value: 0.5272924240430485
-Individual [0.3, 0.7] gives value: 0.559898366565402
-Individual [0.7, 0.1] gives value: 0.6065306597126334
-Individual [0.3, 0.4] gives value: 0.7788007830714049
-Individual [0.3, 0.3] gives value: 0.835270211411272
-Individual [0.0, 0.4] gives value: 0.8521437889662113
-Individual [0.1, 0.3] gives value: 0.9048374180359595
-Individual [0.1, 0.1] gives value: 0.9801986733067553
-Individual [0.1, 0.1] gives value: 0.9801986733067553
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 45:
-Individual [1.0, 0.6] gives value: 0.25666077695355594
-Individual [1.0, 0.6] gives value: 0.25666077695355594
-Individual [0.8, 0.6] gives value: 0.36787944117144233
-Individual [0.3, 0.9] gives value: 0.4065696597405991
-Individual [0.9, 0.3] gives value: 0.4065696597405991
-Individual [0.3, 0.9] gives value: 0.4065696597405991
-Individual [0.6, 0.7] gives value: 0.4274149319487267
-Individual [0.7, 0.6] gives value: 0.4274149319487267
-Individual [0.8, 0.2] gives value: 0.5066169923655895
-Individual [0.2, 0.7] gives value: 0.5886049696783553
-Individual [0.0, 0.7] gives value: 0.6126263941844161
-Individual [0.6, 0.1] gives value: 0.6907343306373547
-Individual [0.6, 0.0] gives value: 0.697676326071031
-Individual [0.1, 0.5] gives value: 0.7710515858035663
-Individual [0.3, 0.4] gives value: 0.7788007830714049
-Individual [0.5, 0.0] gives value: 0.7788007830714049
-Individual [0.5, 0.0] gives value: 0.7788007830714049
-Individual [0.3, 0.3] gives value: 0.835270211411272
-Individual [0.2, 0.0] gives value: 0.9607894391523232
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 46:
-Individual [0.9, 0.5] gives value: 0.3464558103300574
-Individual [0.8, 0.6] gives value: 0.36787944117144233
-Individual [0.7, 0.7] gives value: 0.37531109885139957
-Individual [0.6, 0.7] gives value: 0.4274149319487267
-Individual [0.8, 0.4] gives value: 0.4493289641172215
-Individual [0.7, 0.5] gives value: 0.4771139155210344
-Individual [0.8, 0.3] gives value: 0.4819089900902024
-Individual [0.8, 0.2] gives value: 0.5066169923655895
-Individual [0.7, 0.4] gives value: 0.522045776761016
-Individual [0.0, 0.8] gives value: 0.5272924240430485
-Individual [0.5, 0.6] gives value: 0.5433508690744998
-Individual [0.7, 0.1] gives value: 0.6065306597126334
-Individual [0.1, 0.7] gives value: 0.6065306597126334
-Individual [0.5, 0.4] gives value: 0.6636502501363194
-Individual [0.2, 0.6] gives value: 0.6703200460356393
-Individual [0.1, 0.6] gives value: 0.6907343306373547
-Individual [0.3, 0.5] gives value: 0.7117703227626098
-Individual [0.0, 0.3] gives value: 0.9139311852712282
-Individual [0.2, 0.2] gives value: 0.9231163463866358
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 47:
-Individual [0.7, 1.0] gives value: 0.22537265553943872
-Individual [0.7, 1.0] gives value: 0.22537265553943872
-Individual [0.8, 0.9] gives value: 0.23457028809379762
-Individual [0.7, 0.9] gives value: 0.2725317930340126
-Individual [0.7, 0.8] gives value: 0.3230332564222529
-Individual [0.2, 1.0] gives value: 0.35345468195878016
-Individual [0.9, 0.1] gives value: 0.44043165450599925
-Individual [0.0, 0.8] gives value: 0.5272924240430485
-Individual [0.2, 0.7] gives value: 0.5886049696783553
-Individual [0.7, 0.2] gives value: 0.5886049696783553
-Individual [0.6, 0.3] gives value: 0.6376281516217733
-Individual [0.2, 0.5] gives value: 0.7482635675785652
-Individual [0.5, 0.1] gives value: 0.7710515858035663
-Individual [0.5, 0.1] gives value: 0.7710515858035663
-Individual [0.2, 0.4] gives value: 0.8187307530779818
-Individual [0.4, 0.2] gives value: 0.8187307530779818
-Individual [0.0, 0.3] gives value: 0.9139311852712282
-Individual [0.1, 0.2] gives value: 0.951229424500714
-Individual [0.2, 0.0] gives value: 0.9607894391523232
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 48:
-Individual [0.5, 0.9] gives value: 0.3464558103300574
-Individual [0.8, 0.6] gives value: 0.36787944117144233
-Individual [0.9, 0.4] gives value: 0.3790830381033988
-Individual [0.4, 0.9] gives value: 0.3790830381033988
-Individual [0.4, 0.9] gives value: 0.3790830381033988
-Individual [0.9, 0.1] gives value: 0.44043165450599925
-Individual [0.8, 0.4] gives value: 0.4493289641172215
-Individual [0.8, 0.0] gives value: 0.5272924240430485
-Individual [0.5, 0.6] gives value: 0.5433508690744998
-Individual [0.6, 0.5] gives value: 0.5433508690744998
-Individual [0.3, 0.7] gives value: 0.559898366565402
-Individual [0.1, 0.7] gives value: 0.6065306597126334
-Individual [0.1, 0.7] gives value: 0.6065306597126334
-Individual [0.0, 0.6] gives value: 0.697676326071031
-Individual [0.2, 0.5] gives value: 0.7482635675785652
-Individual [0.4, 0.1] gives value: 0.8436648165963836
-Individual [0.1, 0.4] gives value: 0.8436648165963836
-Individual [0.3, 0.0] gives value: 0.9139311852712282
-Individual [0.1, 0.0] gives value: 0.9900498337491681
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 49:
-Individual [1.0, 0.8] gives value: 0.19398004229089189
-Individual [0.9, 0.7] gives value: 0.2725317930340126
-Individual [0.8, 0.7] gives value: 0.3230332564222529
-Individual [1.0, 0.3] gives value: 0.33621649370673334
-Individual [0.3, 1.0] gives value: 0.33621649370673334
-Individual [0.2, 1.0] gives value: 0.35345468195878016
-Individual [0.4, 0.9] gives value: 0.3790830381033988
-Individual [0.4, 0.9] gives value: 0.3790830381033988
-Individual [0.2, 0.8] gives value: 0.5066169923655895
-Individual [0.8, 0.1] gives value: 0.5220457767610159
-Individual [0.7, 0.3] gives value: 0.559898366565402
-Individual [0.4, 0.5] gives value: 0.6636502501363194
-Individual [0.2, 0.6] gives value: 0.6703200460356393
-Individual [0.4, 0.4] gives value: 0.7261490370736908
-Individual [0.3, 0.4] gives value: 0.7788007830714049
-Individual [0.2, 0.4] gives value: 0.8187307530779818
-Individual [0.4, 0.2] gives value: 0.8187307530779818
-Individual [0.4, 0.1] gives value: 0.8436648165963836
-Individual [0.1, 0.4] gives value: 0.8436648165963836
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
-
-INFO about generation 50:
-Individual [0.8, 1.0] gives value: 0.19398004229089189
-Individual [0.8, 0.9] gives value: 0.23457028809379762
-Individual [0.9, 0.5] gives value: 0.3464558103300574
-Individual [0.8, 0.5] gives value: 0.41065575275234545
-Individual [0.7, 0.6] gives value: 0.4274149319487267
-Individual [0.9, 0.1] gives value: 0.44043165450599925
-Individual [0.9, 0.0] gives value: 0.4448580662229411
-Individual [0.4, 0.8] gives value: 0.4493289641172215
-Individual [0.8, 0.3] gives value: 0.4819089900902024
-Individual [0.8, 0.0] gives value: 0.5272924240430485
-Individual [0.6, 0.5] gives value: 0.5433508690744998
-Individual [0.2, 0.7] gives value: 0.5886049696783553
-Individual [0.6, 0.3] gives value: 0.6376281516217733
-Individual [0.1, 0.6] gives value: 0.6907343306373547
-Individual [0.1, 0.4] gives value: 0.8436648165963836
-Individual [0.3, 0.1] gives value: 0.9048374180359595
-Individual [0.1, 0.3] gives value: 0.9048374180359595
-Individual [0.2, 0.0] gives value: 0.9607894391523232
-Individual [0.1, 0.1] gives value: 0.9801986733067553
-Individual [0.0, 0.0] gives value: 1.0
-
-max value for this generation: 1.0
+max value for this generation: 0.9900498337491681
 

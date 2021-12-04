@@ -1,13 +1,18 @@
 import pprint
+import sys
 import time
 
 import numpy as np
+from PyQt5 import QtWidgets
 from matplotlib import animation, cm
 from numpy.random import randint
 from random import random as rnd
 from random import gauss, randrange
 from genmodel.test_functions import TestFunctions
 import matplotlib.pyplot as plt
+import test
+
+import constants
 
 
 def individual(number_of_genes, upper_limit, lower_limit):
@@ -23,17 +28,17 @@ def population(number_of_individuals, number_of_genes, upper_limit, lower_limit)
 # TODO:  Возможно, вынести параметры, для которых будут вызываться вычисление соотвествующей функции
 # TODO: Поменять в функциях соответсвующие вызовы этого метода
 # Сюда поставлю глобальную переменную, чтобы определять находим мы min, max
-mode = 'max'
+mode = constants.MAX
 # А сюда, чтобы определять чью задачу решать
-task = 'K'  # R - Rosenbrok, K - Khvan, S - Shishkina
+task = constants.KHVAN  # R - Rosenbrok, K - Khvan, S - Shishkina
 
 
 def fitness_calculation(individual):
-    if mode == 'min':
-        if task == 'R':
+    if mode == constants.MIN:
+        if task == constants.ROSENBROCK:
             return -TestFunctions.rosenbrock_function(individual[0], individual[1])
     else:
-        if task == 'K':
+        if task == constants.KHVAN:
             return TestFunctions.kkhvan_function(individual[0], individual[1])
 
 
@@ -182,7 +187,7 @@ def main(generations_number, number_of_individuals, number_of_genes, upper_limit
                 res.write("\nmin value for this generation: " + str(min(generation['Fitness'])) + "\n\n")
             else:
                 res.write("\nmax value for this generation: " + str(max(generation['Fitness'])) + "\n\n")
-    gui(gen, generations_number)
+    return gui(gen, generations_number)
 
 
 # TODO: Переделать, сделать настоящую GUI. Вынести рисование графиков в отдельную функцию
@@ -191,9 +196,9 @@ def gui(generations, generations_number):
     Y = np.arange(-3, 3, 0.1)
     X, Y = np.meshgrid(X, Y)
 
-    if task == "R":
+    if task == constants.ROSENBROCK:
         Z = TestFunctions.rosenbrock_function(X, Y)
-    elif task == "K":
+    elif task == constants.KHVAN:
         Z = TestFunctions.kkhvan_function(X, Y)
     else:
         Z = TestFunctions.dshishkina_function(X, Y)
@@ -233,9 +238,15 @@ def gui(generations, generations_number):
     ax.set_xlabel('X')
     ax.set_ylabel('Y')
     ax.set_zlabel('Z')
-    plt.show()
+    #plt.show()
+    return fig
 
 
 # TODO: Необходимо для этой проги вывоводить 3 функции: мою, Дианы, Розенброка
 if __name__ == '__main__':
-    main(50, 20, 2, -1, -1)
+    # main(50, 20, 2, -1, -1)
+    app = QtWidgets.QApplication(sys.argv)
+    window = test.MyWindow()
+    window.draw_figure(main(50, 20, 2, -1, -1))
+    window.show()
+    sys.exit(app.exec_())
