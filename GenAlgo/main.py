@@ -1,15 +1,11 @@
-import pprint
 import sys
-import time
 
 import numpy as np
 from PyQt5 import QtWidgets
-from matplotlib import animation, cm
 from numpy.random import randint
 from random import random as rnd
-from random import gauss, randrange
-from genmodel.test_functions import TestFunctions
-import matplotlib.pyplot as plt
+from random import gauss
+from GenAlgo.test_functions import TestFunctions
 import test
 
 import constants
@@ -34,12 +30,15 @@ task = constants.KHVAN  # R - Rosenbrok, K - Khvan, S - Shishkina
 
 
 def fitness_calculation(individual):
-    if mode == constants.MIN:
-        if task == constants.ROSENBROCK:
-            return -TestFunctions.rosenbrock_function(individual[0], individual[1])
-    else:
-        if task == constants.KHVAN:
-            return TestFunctions.kkhvan_function(individual[0], individual[1])
+    #if mode == constants.MIN:
+    global mode
+    if task == constants.ROSENBROCK:
+        mode = constants.MIN
+        return -TestFunctions.rosenbrock_function(individual[0], individual[1])
+    #else:
+    if task == constants.KHVAN:
+        mode = constants.MAX
+        return TestFunctions.kkhvan_function(individual[0], individual[1])
 
 
 def selection(generation, method='Fittest Half'):
@@ -121,6 +120,8 @@ def next_generation(gen, upper_limit, lower_limit):
     offsprings1 = [offsprings[x][0] for x in range(len(parents))]
     offsprings2 = [offsprings[x][1] for x in range(len(parents))]
     unmutated = selected['Individuals'] + offsprings1 + offsprings2
+    #mutated = unmutated
+    #print(mutated)
     mutated = [mutation(unmutated[x], upper_limit, lower_limit) for x in range(len(gen['Individuals']))]
     unsorted_individuals = mutated + [elit['Individuals']]
     unsorted_next_gen = [fitness_calculation(mutated[x]) for x in range(len(mutated))]
@@ -156,7 +157,8 @@ def first_generation(pop):
     return {'Individuals': population, 'Fitness': sorted(fitness)}
 
 
-def main(generations_number, number_of_individuals, number_of_genes, upper_limit, lower_limit):
+def main(generations_number, number_of_individuals, upper_limit, lower_limit):
+    number_of_genes = 2
     pop = population(number_of_individuals, number_of_genes, upper_limit, lower_limit)
     gen = [first_generation(pop)]
     fitness_avg = np.array([sum(gen[0]['Fitness']) / len(gen[0]['Fitness'])])
@@ -175,7 +177,7 @@ def main(generations_number, number_of_individuals, number_of_genes, upper_limit
         fitness_avg = np.append(fitness_avg, sum(gen[-1]['Fitness']) / len(gen[-1]['Fitness']))
         fitness_max = np.append(fitness_max, max(gen[-1]['Fitness']))
     ## Для минимума нужно сделать инверсию значений
-    if mode == 'min':
+    if mode == constants.MIN:
         for gener in gen:
             gener["Fitness"] = [-x for x in gener["Fitness"]]
     with open("GA_results.txt", "w") as res:
@@ -187,59 +189,11 @@ def main(generations_number, number_of_individuals, number_of_genes, upper_limit
                 res.write("\nmin value for this generation: " + str(min(generation['Fitness'])) + "\n\n")
             else:
                 res.write("\nmax value for this generation: " + str(max(generation['Fitness'])) + "\n\n")
-    return gui(gen, generations_number)
+    return gen, generations_number
 
 
 # TODO: Переделать, сделать настоящую GUI. Вынести рисование графиков в отдельную функцию
-def gui(generations, generations_number):
-    X = np.arange(-2, 2, 0.1)
-    Y = np.arange(-3, 3, 0.1)
-    X, Y = np.meshgrid(X, Y)
 
-    if task == constants.ROSENBROCK:
-        Z = TestFunctions.rosenbrock_function(X, Y)
-    elif task == constants.KHVAN:
-        Z = TestFunctions.kkhvan_function(X, Y)
-    else:
-        Z = TestFunctions.dshishkina_function(X, Y)
-
-    fig = plt.figure(figsize=(6, 6), num='GA animation')
-
-    ax = fig.add_subplot(projection='3d')
-    ax.view_init(45, 45)
-    surf = ax.plot_surface(X, Y, Z, cmap=cm.Spectral,
-                           linewidth=0, antialiased=True, alpha=0.6)
-
-    title = ax.set_title('GA-optimizer plot')
-
-    def update_graph(num):
-        df = {
-            'x': np.array([i[0] for i in generations[num]['Individuals']]),
-            'y': np.array([i[1] for i in generations[num]['Individuals']]),
-            'f(x, y)': np.array([i for i in generations[num]['Fitness']])
-        }
-        graph.set_data(df['x'], df['y'])
-        graph.set_3d_properties(df['f(x, y)'])
-        title.set_text('generation={}'.format(num + 1))
-
-        return title, graph,
-
-    df = {
-        'x': np.array([i[0] for i in generations[0]['Individuals']]),
-        'y': np.array([i[1] for i in generations[0]['Individuals']]),
-        'f(x, y)': np.array([i for i in generations[0]['Fitness']])
-    }
-    graph, = ax.plot(np.array(df['x']), np.array(df['y']), np.array(df['f(x, y)']),
-                     linestyle="", c='black', marker='2', ms=2)
-    surf = ax.plot_surface(X, Y, Z, cmap=cm.Spectral, linewidth=0, antialiased=True, alpha=0.6)
-    anim = animation.FuncAnimation(
-        fig, update_graph, generations_number, interval=100, save_count=True)
-    #
-    ax.set_xlabel('X')
-    ax.set_ylabel('Y')
-    ax.set_zlabel('Z')
-    #plt.show()
-    return fig
 
 
 # TODO: Необходимо для этой проги вывоводить 3 функции: мою, Дианы, Розенброка

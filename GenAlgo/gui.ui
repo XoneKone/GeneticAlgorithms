@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1300</width>
-    <height>750</height>
+    <height>800</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,7 +20,7 @@
    <property name="geometry">
     <rect>
      <x>630</x>
-     <y>15</y>
+     <y>80</y>
      <width>650</width>
      <height>700</height>
     </rect>
@@ -32,11 +32,11 @@
     </sizepolicy>
    </property>
   </widget>
-  <widget class="QTabWidget" name="tabWidget">
+  <widget class="QTabWidget" name="algorithms">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>15</y>
+     <y>30</y>
      <width>300</width>
      <height>700</height>
     </rect>
@@ -45,72 +45,17 @@
     <enum>QTabWidget::West</enum>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="genethic_algorithm">
     <attribute name="title">
      <string>Genethic algorithm</string>
     </attribute>
-    <widget class="QLabel" name="label_number_of_chromosomes">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>70</y>
-       <width>121</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Число хромосом</string>
-     </property>
-    </widget>
-    <widget class="QRadioButton" name="khvan">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>430</y>
-       <width>151</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Костина функция</string>
-     </property>
-    </widget>
-    <widget class="QRadioButton" name="shishkina">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>470</y>
-       <width>161</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Дианина функция</string>
-     </property>
-     <property name="checked">
-      <bool>true</bool>
-     </property>
-    </widget>
-    <widget class="QRadioButton" name="rosenbrock">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>510</y>
-       <width>131</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Розенброк</string>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_number_of_individuals">
      <property name="geometry">
       <rect>
        <x>50</x>
-       <y>170</y>
+       <y>60</y>
        <width>161</width>
        <height>31</height>
       </rect>
@@ -123,7 +68,7 @@
      <property name="geometry">
       <rect>
        <x>50</x>
-       <y>280</y>
+       <y>200</y>
        <width>141</width>
        <height>31</height>
       </rect>
@@ -132,21 +77,11 @@
       <string>Number of generations</string>
      </property>
     </widget>
-    <widget class="QSpinBox" name="number_of_chromosomes">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>110</y>
-       <width>111</width>
-       <height>24</height>
-      </rect>
-     </property>
-    </widget>
     <widget class="QSpinBox" name="number_of_generations">
      <property name="geometry">
       <rect>
        <x>50</x>
-       <y>320</y>
+       <y>240</y>
        <width>111</width>
        <height>24</height>
       </rect>
@@ -156,39 +91,187 @@
      <property name="geometry">
       <rect>
        <x>50</x>
-       <y>210</y>
+       <y>100</y>
        <width>111</width>
        <height>24</height>
       </rect>
      </property>
     </widget>
-    <widget class="QPushButton" name="lauch_button">
+   </widget>
+   <widget class="QWidget" name="bees_algorithm">
+    <attribute name="title">
+     <string>Bees algorithm</string>
+    </attribute>
+    <widget class="QLabel" name="label_number_of_scout_bees">
      <property name="geometry">
       <rect>
-       <x>70</x>
-       <y>590</y>
-       <width>80</width>
-       <height>23</height>
+       <x>40</x>
+       <y>30</y>
+       <width>161</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="text">
-      <string>Launch</string>
+      <string>Scout bees</string>
      </property>
     </widget>
-   </widget>
-   <widget class="QWidget" name="tab_2">
-    <attribute name="title">
-     <string>Tab 2</string>
-    </attribute>
+    <widget class="QSpinBox" name="number_of_scout_bees">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>70</y>
+       <width>111</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_number_of_elite_plots">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>120</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Elite plots</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="number_of_elite_plots">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>160</y>
+       <width>111</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_number_of_perspective_slots">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>220</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Perspective plots</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="number_of_perspective_plots">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>260</y>
+       <width>111</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_number_of_bees_on_elite_plots">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>310</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bees on elite plots</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="number_of_bees_on_elite_plots">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>350</y>
+       <width>111</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_number_of_bees_on_perspective_slots">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>410</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bees on perspective plots</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="number_of_bees_on_perspective_plots">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>450</y>
+       <width>111</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_elite_plot_radius">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>510</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Elite plot radius</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="elite_plot_radius">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>550</y>
+       <width>111</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_perspective_plot_radius">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>610</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Perspective plot radius</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="perspective_plot_radius">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>650</y>
+       <width>111</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QScrollArea" name="scrollArea">
    <property name="geometry">
     <rect>
      <x>340</x>
-     <y>15</y>
+     <y>30</y>
      <width>270</width>
-     <height>700</height>
+     <height>750</height>
     </rect>
    </property>
    <property name="widgetResizable">
@@ -200,7 +283,7 @@
       <x>0</x>
       <y>0</y>
       <width>268</width>
-      <height>698</height>
+      <height>748</height>
      </rect>
     </property>
     <widget class="QTextBrowser" name="output">
@@ -209,11 +292,66 @@
        <x>0</x>
        <y>0</y>
        <width>270</width>
-       <height>700</height>
+       <height>750</height>
       </rect>
      </property>
     </widget>
    </widget>
+  </widget>
+  <widget class="QRadioButton" name="khvan">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>40</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Костина функция</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="shishkina">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>40</y>
+     <width>161</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Дианина функция</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="rosenbrock">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>40</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Розенброк</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lauch_button">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>750</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Launch</string>
+   </property>
   </widget>
  </widget>
  <resources/>
