@@ -16,13 +16,13 @@ import matplotlib.pylab as plt
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.backends.backend_qt5agg import NavigationToolbar2QT as NavigationToolbar
 
-import constants
+from GenAlgo import constants
 
 
 class MyWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super(MyWindow, self).__init__()
-        uic.loadUi('gui.ui', self)
+        uic.loadUi('GenAlgo/gui.ui', self)
 
         self.functions = QButtonGroup()
         self.functions.addButton(self.khvan, constants.KHVAN)

@@ -8,7 +8,7 @@ from random import gauss
 from GenAlgo.test_functions import TestFunctions
 import test
 
-import constants
+from GenAlgo import constants
 
 
 def individual(number_of_genes, upper_limit, lower_limit):

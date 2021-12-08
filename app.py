@@ -4,8 +4,8 @@ import numpy
 from PyQt5 import QtWidgets
 from matplotlib import pyplot as plt, cm, animation
 
-import main
-import bees.main as bees
+import GenAlgo.main
+import GenAlgo.bees.main as bees
 from GenAlgo import gui, settings, constants
 from GenAlgo.test_functions import TestFunctions
 
