@@ -189,7 +189,7 @@ def main(generations_number, number_of_individuals, upper_limit, lower_limit):
                 res.write("\nmin value for this generation: " + str(min(generation['Fitness'])) + "\n\n")
             else:
                 res.write("\nmax value for this generation: " + str(max(generation['Fitness'])) + "\n\n")
-    return gen, generations_number
+    return gen
 
 
 # TODO: Переделать, сделать настоящую GUI. Вынести рисование графиков в отдельную функцию

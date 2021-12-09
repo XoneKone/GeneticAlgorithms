@@ -8,7 +8,7 @@ class TestFunctions:
         Функция Розенброка
         :rtype: float
         """
-        return (1 - x) ** 2 + 100 * (y - x ** 2) ** 2
+        return -((1 - x) ** 2 + 100 * (y - x ** 2) ** 2)
 
     @classmethod
     def kkhvan_function(cls, x, y):

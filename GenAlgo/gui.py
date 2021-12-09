@@ -93,8 +93,7 @@ class MyWindow(QtWidgets.QMainWindow):
         self.anim = anim
 
     def draw_plot(self, fig, anim):
-        if self.fig:
-            self.fig.clf()
+
         if self.anim:
             self.anim.__del__()
 
