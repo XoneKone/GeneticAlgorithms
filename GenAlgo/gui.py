@@ -7,22 +7,20 @@ import matplotlib
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QSpinBox, QButtonGroup, QPushButton, QPlainTextEdit, QTabWidget
 from matplotlib import animation, cm
-
-from GenAlgo.test_functions import TestFunctions
-
-matplotlib.use('QT5Agg')
-
 import matplotlib.pylab as plt
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.backends.backend_qt5agg import NavigationToolbar2QT as NavigationToolbar
 
-from GenAlgo import constants
+import constants
+from test_functions import TestFunctions
+
+matplotlib.use('QT5Agg')
 
 
 class MyWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super(MyWindow, self).__init__()
-        uic.loadUi('GenAlgo/gui.ui', self)
+        uic.loadUi('gui.ui', self)
 
         self.functions = QButtonGroup()
         self.functions.addButton(self.khvan, constants.KHVAN)

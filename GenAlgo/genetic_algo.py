@@ -5,14 +5,14 @@ from PyQt5 import QtWidgets
 from numpy.random import randint
 from random import random as rnd
 from random import gauss
-from GenAlgo.test_functions import TestFunctions
+from test_functions import TestFunctions
 import test
 
-from GenAlgo import constants
+import constants
 
 
 def individual(number_of_genes, upper_limit, lower_limit):
-    individual = [round(rnd() * (upper_limit - lower_limit) + lower_limit, 1) for x in range(number_of_genes)]
+    individual = [round(rnd() * (upper_limit - lower_limit) + lower_limit, 2) for x in range(number_of_genes)]
     return individual
 
 
@@ -30,15 +30,13 @@ task = constants.KHVAN  # R - Rosenbrok, K - Khvan, S - Shishkina
 
 
 def fitness_calculation(individual):
-    #if mode == constants.MIN:
     global mode
     if task == constants.ROSENBROCK:
-        mode = constants.MIN
         return -TestFunctions.rosenbrock_function(individual[0], individual[1])
-    #else:
-    if task == constants.KHVAN:
-        mode = constants.MAX
-        return TestFunctions.kkhvan_function(individual[0], individual[1])
+    elif task == constants.KHVAN:
+        return -TestFunctions.kkhvan_function(individual[0], individual[1])
+    elif task == constants.SHISHKINA:
+        return -TestFunctions.dshishkina_function(individual[0], individual[1])
 
 
 def selection(generation, method='Fittest Half'):
@@ -92,19 +90,14 @@ def mating(parents, method='Single Point'):
     return offsprings
 
 
-def mutation(individual, upper_limit, lower_limit, muatation_rate=2, method='Reset', standard_deviation=0.001):
-    gene = [randint(0, 2)]
-    for x in range(muatation_rate - 1):
-        gene.append(randint(0, 2))
-        while len(set(gene)) < len(gene):
-            gene[x] = randint(0, 2)
+def mutation(individual, upper_limit, lower_limit, muatation_rate=2, method='Gauss', standard_deviation=0.06):
     mutated_individual = individual.copy()
     if method == 'Gauss':
         for x in range(muatation_rate):
-            mutated_individual[x] = round(individual[x] + gauss(0, standard_deviation), 1)
+            mutated_individual[x] = round(individual[x] + gauss(0, standard_deviation), 2)
     if method == 'Reset':
         for x in range(muatation_rate):
-            mutated_individual[x] = round(rnd() * (upper_limit - lower_limit) + lower_limit, 1)
+            mutated_individual[x] = round(rnd() * (upper_limit - lower_limit) + lower_limit, 2)
     return mutated_individual
 
 
@@ -120,8 +113,8 @@ def next_generation(gen, upper_limit, lower_limit):
     offsprings1 = [offsprings[x][0] for x in range(len(parents))]
     offsprings2 = [offsprings[x][1] for x in range(len(parents))]
     unmutated = selected['Individuals'] + offsprings1 + offsprings2
-    #mutated = unmutated
-    #print(mutated)
+    # mutated = unmutated
+    # print(mutated)
     mutated = [mutation(unmutated[x], upper_limit, lower_limit) for x in range(len(gen['Individuals']))]
     unsorted_individuals = mutated + [elit['Individuals']]
     unsorted_next_gen = [fitness_calculation(mutated[x]) for x in range(len(mutated))]
@@ -157,19 +150,23 @@ def first_generation(pop):
     return {'Individuals': population, 'Fitness': sorted(fitness)}
 
 
-def main(generations_number, number_of_individuals, upper_limit, lower_limit):
+def run(generations_number, number_of_individuals, upper_limit, lower_limit):
+    global mode
     number_of_genes = 2
     pop = population(number_of_individuals, number_of_genes, upper_limit, lower_limit)
     gen = [first_generation(pop)]
-    fitness_avg = np.array([sum(gen[0]['Fitness']) / len(gen[0]['Fitness'])])
-    fitness_max = np.array([max(gen[0]['Fitness'])])
+    fitness_avg = np.array([0.0, sum(gen[0]['Fitness']) / len(gen[0]['Fitness'])])
+    fitness_max = np.array([0.0, max(gen[0]['Fitness'])])
     finish = False
+    similarity = 0
     while not finish:
-        if max(fitness_max) > 6:
-            break
-        if max(fitness_avg) > 5:
-            break
-        if fitness_similarity_check(fitness_max, 50):
+        # if abs(fitness_max[-1] - fitness_max[-2]) <= eps_max:
+        #     break
+        # if abs(fitness_avg[-1] - fitness_avg[-2]) <= eps_avg:
+        #     break
+        if fitness_max[-1] == fitness_max[-2]:
+            similarity += 1
+        if similarity == 12:
             break
         if len(gen) >= generations_number:
             break
@@ -177,23 +174,18 @@ def main(generations_number, number_of_individuals, upper_limit, lower_limit):
         fitness_avg = np.append(fitness_avg, sum(gen[-1]['Fitness']) / len(gen[-1]['Fitness']))
         fitness_max = np.append(fitness_max, max(gen[-1]['Fitness']))
     ## Для минимума нужно сделать инверсию значений
-    if mode == constants.MIN:
-        for gener in gen:
-            gener["Fitness"] = [-x for x in gener["Fitness"]]
+    for gener in gen:
+        gener["Fitness"] = [-x for x in gener["Fitness"]]
     with open("GA_results.txt", "w") as res:
         for index, generation in enumerate(gen, 1):
             res.write("INFO about generation " + str(index) + ':\n')
             for indiv in zip(generation['Individuals'], generation['Fitness']):
                 res.write("Individual " + str(indiv[0]) + " gives value: " + str(indiv[1]) + "\n")
-            if mode == 'min':
-                res.write("\nmin value for this generation: " + str(min(generation['Fitness'])) + "\n\n")
-            else:
-                res.write("\nmax value for this generation: " + str(max(generation['Fitness'])) + "\n\n")
+            res.write("\nmin value for this generation: " + str(min(generation['Fitness'])) + "\n\n")
     return gen
 
 
 # TODO: Переделать, сделать настоящую GUI. Вынести рисование графиков в отдельную функцию
-
 
 
 # TODO: Необходимо для этой проги вывоводить 3 функции: мою, Дианы, Розенброка
@@ -201,6 +193,6 @@ if __name__ == '__main__':
     # main(50, 20, 2, -1, -1)
     app = QtWidgets.QApplication(sys.argv)
     window = test.MyWindow()
-    window.draw_figure(main(50, 20, 2, -1, -1))
+    window.draw_figure(run(50, 20, 2, -1, -1))
     window.show()
     sys.exit(app.exec_())

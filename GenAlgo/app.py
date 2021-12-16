@@ -4,13 +4,15 @@ import numpy
 from PyQt5 import QtWidgets
 from matplotlib import pyplot as plt, cm, animation
 
-from GenAlgo import main
-import GenAlgo.bees.main as bees
-from GenAlgo import gui, settings, constants
-from GenAlgo.test_functions import TestFunctions
+import bees.main as bees
+import constants
+import gui
+import genetic_algo
+import settings
+from test_functions import TestFunctions
 
 
-def plot(name: str, function, points: list[numpy.ndarray]):
+def plot(name: str, function, points):
     """
     Строит заданную функцию и выводит точки
     :param name: подпись графика
@@ -61,18 +63,18 @@ def plot(name: str, function, points: list[numpy.ndarray]):
     ax.set_ylabel('Y')
     ax.set_zlabel('Z')
     window.draw_plot(fig, anim)
-    
+
 
 class AlgorithmLauncher:
-    def launch(self, window: gui.MyWindow):
+    def launch(self, window):
         selected_algorithm = window.get_selected_algorithm()
         if selected_algorithm == settings.GENETIC_ALGORITHM:
             self.genetic_algorithm(window)
-            
+
         elif selected_algorithm == settings.BEES_ALGORITHM:
             self.bees_algorithm(window)
 
-        #window.draw_figure(gen, generation_number)
+        # window.draw_figure(gen, generation_number)
         window.show()
 
     def get_selected_function(self):
@@ -85,17 +87,17 @@ class AlgorithmLauncher:
             function = TestFunctions.dshishkina_function
 
         return function
-        
+
     def genetic_algorithm(self, window):
-        gen = main.main(
+        gen = genetic_algo.run(
             window.genetic_algorithm_get_number_of_generations(),
             window.genetic_algorithm_get_number_of_individuals(),
-            1,
-            -1
+            2,
+            -2
         )
         points = [generation['Individuals'] for generation in gen]
         plot('Genetic algorithm', self.get_selected_function(), points)
-        
+
     def bees_algorithm(self, window):
         bees.NUMBER_OF_SCOUT_BEES = window.bees_algorithm_get_number_of_scout_bees()
         bees.NUMBER_OF_ELITE_PLOTS = window.bees_algorithm_get_number_of_elite_plots()
@@ -108,13 +110,12 @@ class AlgorithmLauncher:
         function = self.get_selected_function()
 
         bees.fittest = lambda point: function(point[0], point[1])
-        
+
         lower_bound = numpy.array([-5, -5])
         upper_bound = numpy.array([5, 5])
         _, points = bees.main(lower_bound, upper_bound, 50)
 
         plot("Bees algorithm", function, points)
-        
 
 
 if __name__ == '__main__':
@@ -125,6 +126,3 @@ if __name__ == '__main__':
     #  window.draw_figure(main())
     window.show()
     sys.exit(app.exec_())
-
-
-
