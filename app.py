@@ -18,8 +18,10 @@ def plot(name: str, function, points: list[numpy.ndarray]):
     :param points: список точек по поколениям, итерациям и т.д.
     :return:
     """
-    X = numpy.arange(-2, 2, 0.1)
-    Y = numpy.arange(-3, 3, 0.1)
+    lower_bound = AlgorithmLauncher.lower_bound
+    upper_bound = AlgorithmLauncher.upper_bound
+    X = numpy.arange(lower_bound[0], upper_bound[0], 0.1)
+    Y = numpy.arange(lower_bound[1], upper_bound[1], 0.1)
     X, Y = numpy.meshgrid(X, Y)
 
     Z = function(X, Y)
@@ -61,31 +63,37 @@ def plot(name: str, function, points: list[numpy.ndarray]):
     ax.set_ylabel('Y')
     ax.set_zlabel('Z')
     window.draw_plot(fig, anim)
-    
+
 
 class AlgorithmLauncher:
+    lower_bound = (-5, -5)
+    upper_bound = (5, 5)
+
     def launch(self, window: gui.MyWindow):
         selected_algorithm = window.get_selected_algorithm()
         if selected_algorithm == settings.GENETIC_ALGORITHM:
             self.genetic_algorithm(window)
-            
+
         elif selected_algorithm == settings.BEES_ALGORITHM:
             self.bees_algorithm(window)
 
-        #window.draw_figure(gen, generation_number)
+        # window.draw_figure(gen, generation_number)
         window.show()
 
     def get_selected_function(self):
         selected_function = window.get_selected_function()
         if selected_function == constants.ROSENBROCK:
+            mode = -1
             function = TestFunctions.rosenbrock_function
         elif selected_function == constants.KHVAN:
+            mode = 1
             function = TestFunctions.kkhvan_function
         else:
+            mode = 1
             function = TestFunctions.dshishkina_function
 
-        return function
-        
+        return function, mode
+
     def genetic_algorithm(self, window):
         gen = main.main(
             window.genetic_algorithm_get_number_of_generations(),
@@ -94,8 +102,9 @@ class AlgorithmLauncher:
             -1
         )
         points = [generation['Individuals'] for generation in gen]
-        plot('Genetic algorithm', self.get_selected_function(), points)
-        
+        window.show_output(gen)
+        plot('Genetic algorithm', self.get_selected_function()[0], points)
+
     def bees_algorithm(self, window):
         bees.NUMBER_OF_SCOUT_BEES = window.bees_algorithm_get_number_of_scout_bees()
         bees.NUMBER_OF_ELITE_PLOTS = window.bees_algorithm_get_number_of_elite_plots()
@@ -105,16 +114,17 @@ class AlgorithmLauncher:
         bees.ELITE_PLOT_RADIUS = window.bees_algorithm_get_elite_plot_radius()
         bees.PERSPECTIVE_PLOT_RADIUS = window.bees_algorithm_get_perspective_plot_radius()
 
-        function = self.get_selected_function()
+        function, mode = self.get_selected_function()
 
-        bees.fittest = lambda point: function(point[0], point[1])
-        
-        lower_bound = numpy.array([-5, -5])
-        upper_bound = numpy.array([5, 5])
-        _, points = bees.main(lower_bound, upper_bound, 50)
+        bees.fittest = lambda point: mode * function(point[0], point[1])
 
+        lower_bound = numpy.array([*self.lower_bound])
+        upper_bound = numpy.array([*self.upper_bound])
+        _, iterations = bees.main(lower_bound, upper_bound, 50)
+        points = [iteration['Individuals'] for iteration in iterations]
+
+        window.show_output(iterations)
         plot("Bees algorithm", function, points)
-        
 
 
 if __name__ == '__main__':
@@ -125,6 +135,3 @@ if __name__ == '__main__':
     #  window.draw_figure(main())
     window.show()
     sys.exit(app.exec_())
-
-
-

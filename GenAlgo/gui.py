@@ -5,7 +5,7 @@ from PyQt5 import QtWidgets, uic
 
 import matplotlib
 from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import QSpinBox, QButtonGroup, QPushButton, QPlainTextEdit, QTabWidget
+from PyQt5.QtWidgets import QSpinBox, QButtonGroup, QPushButton, QPlainTextEdit, QTabWidget, QTextBrowser
 from matplotlib import animation, cm
 
 from GenAlgo.test_functions import TestFunctions
@@ -109,10 +109,6 @@ class MyWindow(QtWidgets.QMainWindow):
         if self.anim:
             self.anim.__del__()
 
-        output: QPlainTextEdit = self.output
-
-        # output.appendPlainText()
-
         self.build(gen, generation_number)
         # self.plotWidget.figure.axes.clear()
         # fig.subfigs.clear()
@@ -120,6 +116,17 @@ class MyWindow(QtWidgets.QMainWindow):
         self.plotWidget.figure = self.fig
         self.fig.set_canvas(self.plotWidget)
         self.plotWidget.draw()
+
+    def show_output(self, points_by_iterations):
+        output: QTextBrowser = self.output
+        output.clear()
+
+        for i, iteration in enumerate(points_by_iterations):
+            points_str = [
+                '{} fitness: {:.3f}'.format(point, fitness)
+                for point, fitness in zip(iteration['Individuals'], iteration['Fitness'])
+            ]
+            output.append('Итерация {}\n{}\n'.format(i + 1, '\n'.join(points_str)))
 
     def get_selected_function(self):
         return self.functions.checkedId()

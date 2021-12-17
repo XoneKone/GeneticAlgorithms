@@ -23,7 +23,7 @@ def go_to_slot(lower_bound: Point, upper_bound: Point, number_of_bees: int):
 
 
 def next_iteration(plots):
-    sorted_by_fitness = sorted(plots, key=fittest)
+    sorted_by_fitness = sorted(plots, key=fittest, reverse=True)
     elite_plots = sorted_by_fitness[:NUMBER_OF_ELITE_PLOTS]
     perspective_plots = sorted_by_fitness[NUMBER_OF_ELITE_PLOTS:NUMBER_OF_ELITE_PLOTS + NUMBER_OF_PERSPECTIVE_PLOTS]
     new_plots = []
@@ -52,14 +52,19 @@ def in_bounds(point: Point, lower_bound: Point, upper_bound: Point):
 
 def main(lower_bound: Point, upper_bound: Point, number_of_iterations):
     plots = go_to_slot(lower_bound, upper_bound, NUMBER_OF_SCOUT_BEES)
-    history_plots = [plots]
+    previous_fitness = [fittest(plot) for plot in plots]
+    history_plots = [{'Individuals': plots, 'Fitness': previous_fitness}]
     for _ in range(number_of_iterations):
         new_plots = next_iteration(plots)
         #  delete points which out bounds
         filtered = list(filter(lambda point: in_bounds(point, lower_bound, upper_bound), new_plots))
-        if not filtered:
+        filtered_fitness = [fittest(plot) for plot in filtered]
+        current_max = max(filtered_fitness)
+        previous_max = max(previous_fitness)
+        if not filtered or current_max <= previous_max:
             break
 
-        history_plots.append(filtered)
+        history_plots.append({'Individuals': filtered, 'Fitness': filtered_fitness})
         plots = new_plots
+        previous_fitness = filtered_fitness
     return plots, history_plots
