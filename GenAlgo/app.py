@@ -4,13 +4,15 @@ import numpy
 from PyQt5 import QtWidgets
 from matplotlib import pyplot as plt, cm, animation
 
-from GenAlgo import main
-import GenAlgo.bees.main as bees
-from GenAlgo import gui, settings, constants
-from GenAlgo.test_functions import TestFunctions
+import bees.main as bees
+import constants
+import gui
+import genetic_algo
+import settings
+from test_functions import TestFunctions
 
 
-def plot(name: str, function, points: list[numpy.ndarray]):
+def plot(name: str, function, points):
     """
     Строит заданную функцию и выводит точки
     :param name: подпись графика
@@ -95,11 +97,11 @@ class AlgorithmLauncher:
         return function, mode
 
     def genetic_algorithm(self, window):
-        gen = main.main(
+        gen = genetic_algo.run(
             window.genetic_algorithm_get_number_of_generations(),
             window.genetic_algorithm_get_number_of_individuals(),
-            1,
-            -1
+            2,
+            -2
         )
         points = [generation['Individuals'] for generation in gen]
         window.show_output(gen)
