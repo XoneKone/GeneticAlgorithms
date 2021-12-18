@@ -125,6 +125,9 @@ class AlgorithmLauncher:
         _, iterations = bees.main(lower_bound, upper_bound, 50)
         points = [iteration['Individuals'] for iteration in iterations]
 
+        if mode == -1:
+            iterations['Fitness'] = [-1 * fitness for fitness in iterations['Fitness']]
+
         window.show_output(iterations)
         plot("Bees algorithm", function, points)
 
