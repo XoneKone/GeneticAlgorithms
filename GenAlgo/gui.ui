@@ -301,7 +301,7 @@
   <widget class="QRadioButton" name="khvan">
    <property name="geometry">
     <rect>
-     <x>700</x>
+     <x>660</x>
      <y>40</y>
      <width>151</width>
      <height>21</height>
@@ -314,7 +314,7 @@
   <widget class="QRadioButton" name="shishkina">
    <property name="geometry">
     <rect>
-     <x>880</x>
+     <x>810</x>
      <y>40</y>
      <width>161</width>
      <height>21</height>
@@ -330,7 +330,7 @@
   <widget class="QRadioButton" name="rosenbrock">
    <property name="geometry">
     <rect>
-     <x>1060</x>
+     <x>960</x>
      <y>40</y>
      <width>131</width>
      <height>21</height>
@@ -343,9 +343,9 @@
   <widget class="QPushButton" name="lauch_button">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>750</y>
-     <width>281</width>
+     <x>1090</x>
+     <y>30</y>
+     <width>221</width>
      <height>31</height>
     </rect>
    </property>
