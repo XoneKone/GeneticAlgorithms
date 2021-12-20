@@ -59,6 +59,12 @@ class Swarm(object):
         """
         return [Particle(self) for _ in range(self.__swarmsize)]
 
+    def get_swarm(self):
+        list_of_particles = []
+        for particle in self.__swarm:
+            list_of_particles.append((particle.position, self._finalFunc(particle.position)))
+        return list_of_particles
+
     def nextIteration(self):
         """
         Выполнить следующую итерацию алгоритма
@@ -99,8 +105,7 @@ class Swarm(object):
 
         finalFunc = self._finalFunc(position)
 
-        if (self.__globalBestFinalFunc == None or
-                finalFunc < self.__globalBestFinalFunc):
+        if self.globalBestFinalFunc is None or finalFunc < self.globalBestFinalFunc:
             self.__globalBestFinalFunc = finalFunc
             self.__globalBestPosition = position[:]
 

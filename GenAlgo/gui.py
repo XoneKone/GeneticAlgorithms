@@ -125,6 +125,7 @@ class MyWindow(QtWidgets.QMainWindow):
                 for point, fitness in zip(iteration['Individuals'], iteration['Fitness'])
             ]
             output.append('Итерация {}\n{}\n'.format(i + 1, '\n'.join(points_str)))
+            output.append(f"Значение локального минимума:{min(iteration['Fitness'])}\n")
 
     def get_selected_function(self):
         return self.functions.checkedId()

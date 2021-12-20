@@ -27,3 +27,14 @@ class TestFunctions:
         """
 
         return np.sin(x ** 2) + np.cos(y ** 2)
+
+    @classmethod
+    def rastrigin(cls, x, y, n):
+        """
+        это для двумерного случая
+        :param x:
+        :param y:
+        :param n: размерность
+        :return:
+        """
+        return 10.0 * n + (x * x - 10.0 * np.cos(2 * np.pi * x)) + (y * y - 10.0 * np.cos(2 * np.pi * y))

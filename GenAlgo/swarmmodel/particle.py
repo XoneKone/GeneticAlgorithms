@@ -81,6 +81,6 @@ class Particle(object):
         self.__currentPosition += self.__velocity
 
         finalFunc = swarm.getFinalFunc(self.__currentPosition)
-        if finalFunc < self.__localBestFinalFunc:
+        if finalFunc is not None and finalFunc < self.__localBestFinalFunc:
             self.__localBestPosition = self.__currentPosition[:]
             self.__localBestFinalFunc = finalFunc

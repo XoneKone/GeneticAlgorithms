@@ -68,8 +68,8 @@ def plot(name: str, function, points):
 
 
 class AlgorithmLauncher:
-    lower_bound = (-5, -5)
-    upper_bound = (5, 5)
+    lower_bound = (-2, -2)
+    upper_bound = (2, 2)
 
     def launch(self, window: gui.MyWindow):
         selected_algorithm = window.get_selected_algorithm()
@@ -94,14 +94,15 @@ class AlgorithmLauncher:
             mode = 1
             function = TestFunctions.dshishkina_function
 
-        return function, mode
+        return function, selected_function
 
     def genetic_algorithm(self, window):
         gen = genetic_algo.run(
             window.genetic_algorithm_get_number_of_generations(),
             window.genetic_algorithm_get_number_of_individuals(),
             2,
-            -2
+            -2,
+            task=self.get_selected_function()[1]
         )
         points = [generation['Individuals'] for generation in gen]
         window.show_output(gen)
