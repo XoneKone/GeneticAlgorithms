@@ -104,7 +104,7 @@ class AlgorithmLauncher:
             -2
         )
         points = [generation['Individuals'] for generation in gen]
-        window.show_output(gen)
+        window.show_output(gen, None)
         plot('Genetic algorithm', self.get_selected_function()[0], points)
 
     def bees_algorithm(self, window):
@@ -124,11 +124,16 @@ class AlgorithmLauncher:
         upper_bound = numpy.array([*self.upper_bound])
         _, iterations = bees.main(lower_bound, upper_bound, 50)
         points = [iteration['Individuals'] for iteration in iterations]
+        better_points = [max(iteration['Individuals'], key=lambda x: bees.fittest(x)) for iteration in iterations]
 
         if mode == -1:
             iterations['Fitness'] = [-1 * fitness for fitness in iterations['Fitness']]
+            better = [(point, -1 * bees.fittest(point)) for point in better_points]
 
-        window.show_output(iterations)
+        else:
+            better = [(point, bees.fittest(point)) for point in better_points]
+
+        window.show_output(iterations, better)
         plot("Bees algorithm", function, points)
 
 

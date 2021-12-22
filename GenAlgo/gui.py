@@ -115,16 +115,20 @@ class MyWindow(QtWidgets.QMainWindow):
         self.fig.set_canvas(self.plotWidget)
         self.plotWidget.draw()
 
-    def show_output(self, points_by_iterations):
+    def show_output(self, points_by_iterations, better_points):
         output: QTextBrowser = self.output
         output.clear()
 
         for i, iteration in enumerate(points_by_iterations):
+            points_with_fitness = zip(iteration['Individuals'], iteration['Fitness'])
+            point_format = '{} fitness: {:.3f}'
             points_str = [
-                '{} fitness: {:.3f}'.format(point, fitness)
-                for point, fitness in zip(iteration['Individuals'], iteration['Fitness'])
+                point_format.format(point, fitness)
+                for point, fitness in points_with_fitness
             ]
             output.append('Итерация {}\n{}\n'.format(i + 1, '\n'.join(points_str)))
+            better_point = point_format.format(better_points[i][0], better_points[i][1])
+            output.append('\n{}\n'.format(better_point))
 
     def get_selected_function(self):
         return self.functions.checkedId()

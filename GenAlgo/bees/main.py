@@ -54,14 +54,18 @@ def main(lower_bound: Point, upper_bound: Point, number_of_iterations):
     plots = go_to_slot(lower_bound, upper_bound, NUMBER_OF_SCOUT_BEES)
     previous_fitness = [fittest(plot) for plot in plots]
     history_plots = [{'Individuals': plots, 'Fitness': previous_fitness}]
+    num = 0
     for _ in range(number_of_iterations):
         new_plots = next_iteration(plots)
         #  delete points which out bounds
         filtered = list(filter(lambda point: in_bounds(point, lower_bound, upper_bound), new_plots))
         filtered_fitness = [fittest(plot) for plot in filtered]
-        current_max = max(filtered_fitness)
-        previous_max = max(previous_fitness)
-        if not filtered or current_max <= previous_max:
+        if filtered_fitness and max(filtered_fitness) <= max(previous_fitness):
+            num += 1
+        else:
+            num = 0
+
+        if not filtered or num >= 3:
             break
 
         history_plots.append({'Individuals': filtered, 'Fitness': filtered_fitness})
