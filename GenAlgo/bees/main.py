@@ -23,7 +23,7 @@ def go_to_slot(lower_bound: Point, upper_bound: Point, number_of_bees: int):
 
 
 def next_iteration(plots):
-    sorted_by_fitness = sorted(plots, key=fittest, reverse=True)
+    sorted_by_fitness = sorted(plots, key=fittest, reverse=True)[:NUMBER_OF_SCOUT_BEES]
     elite_plots = sorted_by_fitness[:NUMBER_OF_ELITE_PLOTS]
     perspective_plots = sorted_by_fitness[NUMBER_OF_ELITE_PLOTS:NUMBER_OF_ELITE_PLOTS + NUMBER_OF_PERSPECTIVE_PLOTS]
     new_plots = []
@@ -41,6 +41,7 @@ def next_iteration(plots):
             NUMBER_OF_BEES_ON_PERSPECTIVE_PLOTS),
         )
 
+    new_plots.extend(plots)
     return new_plots
 
 

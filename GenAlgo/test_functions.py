@@ -27,3 +27,7 @@ class TestFunctions:
         """
 
         return np.sin(x ** 2) + np.cos(y ** 2)
+
+    @classmethod
+    def himmelblau_function(cls, x, y):
+        return (x ** 2 + y - 11) ** 2 + (x + y ** 2 - 7) ** 2

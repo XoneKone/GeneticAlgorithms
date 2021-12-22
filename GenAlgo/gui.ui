@@ -353,6 +353,19 @@
     <string>Launch</string>
    </property>
   </widget>
+  <widget class="QRadioButton" name="himmelblau">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>10</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Химмельблау</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

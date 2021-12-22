@@ -26,6 +26,7 @@ class MyWindow(QtWidgets.QMainWindow):
         self.functions.addButton(self.khvan, constants.KHVAN)
         self.functions.addButton(self.shishkina, constants.SHISHKINA)
         self.functions.addButton(self.rosenbrock, constants.ROSENBROCK)
+        self.functions.addButton(self.himmelblau, constants.HIMMELBLAU)
 
         self.plotWidget = FigureCanvas()
         self.lay = QtWidgets.QHBoxLayout(self.content_plot)

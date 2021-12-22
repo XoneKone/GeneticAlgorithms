@@ -90,6 +90,9 @@ class AlgorithmLauncher:
         elif selected_function == constants.KHVAN:
             mode = 1
             function = TestFunctions.kkhvan_function
+        elif selected_function == constants.HIMMELBLAU:
+            mode = -1
+            function = TestFunctions.himmelblau_function
         else:
             mode = 1
             function = TestFunctions.dshishkina_function
@@ -127,7 +130,8 @@ class AlgorithmLauncher:
         better_points = [max(iteration['Individuals'], key=lambda x: bees.fittest(x)) for iteration in iterations]
 
         if mode == -1:
-            iterations['Fitness'] = [-1 * fitness for fitness in iterations['Fitness']]
+            for iteration in iterations:
+                iteration['Fitness'] = [-1 * f for f in iteration['Fitness']]
             better = [(point, -1 * bees.fittest(point)) for point in better_points]
 
         else:
