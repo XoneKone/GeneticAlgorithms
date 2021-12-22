@@ -23,14 +23,9 @@ def population(number_of_individuals, number_of_genes, upper_limit, lower_limit)
 # TODO: Сделать универсальную фукнцию.
 # TODO:  Возможно, вынести параметры, для которых будут вызываться вычисление соотвествующей функции
 # TODO: Поменять в функциях соответсвующие вызовы этого метода
-# Сюда поставлю глобальную переменную, чтобы определять находим мы min, max
-mode = constants.MAX
-# А сюда, чтобы определять чью задачу решать
-task = constants.KHVAN  # R - Rosenbrok, K - Khvan, S - Shishkina
 
 
-def fitness_calculation(individual):
-    global mode
+def fitness_calculation(individual, task):
     if task == constants.ROSENBROCK:
         return -TestFunctions.rosenbrock_function(individual[0], individual[1])
     elif task == constants.KHVAN:
@@ -90,18 +85,18 @@ def mating(parents, method='Single Point'):
     return offsprings
 
 
-def mutation(individual, upper_limit, lower_limit, muatation_rate=2, method='Gauss', standard_deviation=0.06):
+def mutation(individual, upper_limit, lower_limit, muatation_rate=2, method='Gauss', standard_deviation=0.01):
     mutated_individual = individual.copy()
     if method == 'Gauss':
         for x in range(muatation_rate):
-            mutated_individual[x] = round(individual[x] + gauss(0, standard_deviation), 2)
+            mutated_individual[x] = round(individual[x] + gauss(0, standard_deviation), 3)
     if method == 'Reset':
         for x in range(muatation_rate):
-            mutated_individual[x] = round(rnd() * (upper_limit - lower_limit) + lower_limit, 2)
+            mutated_individual[x] = round(rnd() * (upper_limit - lower_limit) + lower_limit, 3)
     return mutated_individual
 
 
-def next_generation(gen, upper_limit, lower_limit):
+def next_generation(gen, upper_limit, lower_limit, task):
     elit = {}
     next_gen = {}
     elit['Individuals'] = gen['Individuals'].pop(-1)
@@ -117,7 +112,7 @@ def next_generation(gen, upper_limit, lower_limit):
     # print(mutated)
     mutated = [mutation(unmutated[x], upper_limit, lower_limit) for x in range(len(gen['Individuals']))]
     unsorted_individuals = mutated + [elit['Individuals']]
-    unsorted_next_gen = [fitness_calculation(mutated[x]) for x in range(len(mutated))]
+    unsorted_next_gen = [fitness_calculation(mutated[x], task) for x in range(len(mutated))]
     unsorted_fitness = [unsorted_next_gen[x] for x in range(len(gen['Fitness']))] + [elit['Fitness']]
     sorted_next_gen = sorted([[unsorted_individuals[x], unsorted_fitness[x]]
                               for x in range(len(unsorted_individuals))],
@@ -142,19 +137,18 @@ def fitness_similarity_check(max_fitness, number_of_similarity):
     return result
 
 
-def first_generation(pop):
-    fitness = [fitness_calculation(pop[x]) for x in range(len(pop))]
+def first_generation(pop, task):
+    fitness = [fitness_calculation(pop[x], task) for x in range(len(pop))]
     sorted_fitness = sorted([[pop[x], fitness[x]] for x in range(len(pop))], key=lambda x: x[1])
     population = [sorted_fitness[x][0] for x in range(len(sorted_fitness))]
     fitness = [sorted_fitness[x][1] for x in range(len(sorted_fitness))]
     return {'Individuals': population, 'Fitness': sorted(fitness)}
 
 
-def run(generations_number, number_of_individuals, upper_limit, lower_limit):
-    global mode
+def run(generations_number, number_of_individuals, upper_limit, lower_limit, task):
     number_of_genes = 2
     pop = population(number_of_individuals, number_of_genes, upper_limit, lower_limit)
-    gen = [first_generation(pop)]
+    gen = [first_generation(pop, task)]
     fitness_avg = np.array([0.0, sum(gen[0]['Fitness']) / len(gen[0]['Fitness'])])
     fitness_max = np.array([0.0, max(gen[0]['Fitness'])])
     finish = False
@@ -166,11 +160,11 @@ def run(generations_number, number_of_individuals, upper_limit, lower_limit):
         #     break
         if fitness_max[-1] == fitness_max[-2]:
             similarity += 1
-        if similarity == 12:
+        if similarity == 20:
             break
         if len(gen) >= generations_number:
             break
-        gen.append(next_generation(gen[-1], 1, 0))
+        gen.append(next_generation(gen[-1], 1, 0, task))
         fitness_avg = np.append(fitness_avg, sum(gen[-1]['Fitness']) / len(gen[-1]['Fitness']))
         fitness_max = np.append(fitness_max, max(gen[-1]['Fitness']))
     ## Для минимума нужно сделать инверсию значений
@@ -185,10 +179,6 @@ def run(generations_number, number_of_individuals, upper_limit, lower_limit):
     return gen
 
 
-# TODO: Переделать, сделать настоящую GUI. Вынести рисование графиков в отдельную функцию
-
-
-# TODO: Необходимо для этой проги вывоводить 3 функции: мою, Дианы, Розенброка
 if __name__ == '__main__':
     # main(50, 20, 2, -1, -1)
     app = QtWidgets.QApplication(sys.argv)
