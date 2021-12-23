@@ -6,7 +6,7 @@ from abc import ABCMeta, abstractmethod
 import numpy
 import numpy.random
 
-from particle import Particle
+from swarmmodel.particle import Particle
 
 
 class Swarm(object):

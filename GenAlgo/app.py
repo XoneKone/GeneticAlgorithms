@@ -9,6 +9,7 @@ import constants
 import gui
 import genetic_algo
 import settings
+from swarmmodel import runoptimize_rastrigin
 from test_functions import TestFunctions
 
 
@@ -64,6 +65,59 @@ def plot(name: str, function, points):
     ax.set_xlabel('X')
     ax.set_ylabel('Y')
     ax.set_zlabel('Z')
+    window.draw_plot(fig, anim)
+
+
+def plot_rastrigin(params):
+    """
+
+    :param params: [iterCount, eps, dimension,swarmsize,currentVelocityRatio,localVelocityRatio,globalVelocityRatio]
+    :return:
+    """
+    best_positions, result_print =  runoptimize_rastrigin.run(*params) # Во второй переменной хранится строка для ввыода инфы
+    X = numpy.arange(-5.12, 5.12, 0.01)
+    Y = numpy.arange(-5.12, 5.12, 0.01)
+
+    X, Y = numpy.meshgrid(X, Y)
+
+    Z = TestFunctions.rastrigin(X, Y, 2)
+    fig = plt.figure(figsize=(6, 6), num="pso")
+    fig.clf()
+
+    ax = fig.add_subplot(projection='3d')
+    ax.view_init(45, 45)
+    surf = ax.plot_surface(X, Y, Z, cmap=cm.Spectral,
+                           linewidth=0, antialiased=True, alpha=0.6)
+
+    title = ax.set_title("pso")
+
+    def update_graph(num):
+        df = {
+            'x': numpy.array([point[0][0] for point in best_positions[num]]),
+            'y': numpy.array([point[0][1] for point in best_positions[num]]),
+            'f(x, y)': numpy.array([point[1] for point in best_positions[num]])
+        }
+        graph.set_data(df['x'], df['y'])
+        graph.set_3d_properties(df['f(x, y)'])
+        title.set_text('iteration={}'.format(num + 1))
+
+        return title, graph,
+
+    df = {
+        'x': numpy.array([point[0][0] for point in best_positions[0]]),
+        'y': numpy.array([point[0][1] for point in best_positions[0]]),
+        'f(x, y)': numpy.array([point[1] for point in best_positions[0]])
+    }
+    graph, = ax.plot(numpy.array(df['x']), numpy.array(df['y']), numpy.array(df['f(x, y)']),
+                     linestyle="", c='black', marker='2', ms=2)
+    surf = ax.plot_surface(X, Y, Z, cmap=cm.Spectral, linewidth=0, antialiased=True, alpha=0.6)
+    anim = animation.FuncAnimation(
+        fig, update_graph, len(best_positions), interval=100, save_count=True)
+    #
+    ax.set_xlabel('X')
+    ax.set_ylabel('Y')
+    ax.set_zlabel('Z')
+
     window.draw_plot(fig, anim)
 
 
@@ -140,6 +194,10 @@ class AlgorithmLauncher:
 
         window.show_output(iterations, better)
         plot("Bees algorithm", function, points)
+
+    def swarm_particles(self, window):
+        # TODO: Сделать тут обработчик значений
+        pass
 
 
 if __name__ == '__main__':
