@@ -3,8 +3,8 @@
 import numpy as np
 from matplotlib import cm, pyplot as plt, animation
 
-from swarm_rastrigin import Swarm_Rastrigin
-from utils import printResult
+from swarmmodel.swarm_rastrigin import Swarm_Rastrigin
+from swarmmodel.utils import printResult
 from test_functions import TestFunctions
 import numpy
 

@@ -12,7 +12,7 @@ import constants
 
 
 def individual(number_of_genes, upper_limit, lower_limit):
-    individual = [round(rnd() * (upper_limit - lower_limit) + lower_limit, 2) for x in range(number_of_genes)]
+    individual = [round(rnd() * (upper_limit - lower_limit) + lower_limit, 3) for x in range(number_of_genes)]
     return individual
 
 
@@ -147,6 +147,7 @@ def first_generation(pop, task):
 
 def run(generations_number, number_of_individuals, upper_limit, lower_limit, task):
     number_of_genes = 2
+    eps = 0.000001
     pop = population(number_of_individuals, number_of_genes, upper_limit, lower_limit)
     gen = [first_generation(pop, task)]
     fitness_avg = np.array([0.0, sum(gen[0]['Fitness']) / len(gen[0]['Fitness'])])
@@ -154,13 +155,15 @@ def run(generations_number, number_of_individuals, upper_limit, lower_limit, tas
     finish = False
     similarity = 0
     while not finish:
-        # if abs(fitness_max[-1] - fitness_max[-2]) <= eps_max:
+
         #     break
         # if abs(fitness_avg[-1] - fitness_avg[-2]) <= eps_avg:
         #     break
-        if fitness_max[-1] == fitness_max[-2]:
+        if abs(fitness_max[-1] - fitness_max[-2]) <= eps:
             similarity += 1
-        if similarity == 20:
+        else:
+            similarity = 0
+        if similarity == 50:
             break
         if len(gen) >= generations_number:
             break

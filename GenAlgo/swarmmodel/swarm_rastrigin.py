@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
-from swarm import Swarm
+from swarmmodel.swarm import Swarm
 
 import numpy
 
