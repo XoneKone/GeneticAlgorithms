@@ -33,7 +33,7 @@ class TestFunctions:
         return (x ** 2 + y - 11) ** 2 + (x + y ** 2 - 7) ** 2
 
     @classmethod
-    def rastrigin(cls, x, y, n):
+    def rastrigin(cls, x, y, n=2):
         """
         это для двумерного случая
         :param x:

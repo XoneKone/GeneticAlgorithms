@@ -27,6 +27,7 @@ class MyWindow(QtWidgets.QMainWindow):
         self.functions.addButton(self.shishkina, constants.SHISHKINA)
         self.functions.addButton(self.rosenbrock, constants.ROSENBROCK)
         self.functions.addButton(self.himmelblau, constants.HIMMELBLAU)
+        self.functions.addButton(self.rastrigin, constants.RASTRIGIN)
 
         self.plotWidget = FigureCanvas()
         self.lay = QtWidgets.QHBoxLayout(self.content_plot)
@@ -131,6 +132,12 @@ class MyWindow(QtWidgets.QMainWindow):
             better_point = point_format.format(better_points[i][0], better_points[i][1])
             output.append('\n{}\n'.format(better_point))
 
+    def output_text(self, text):
+        output: QTextBrowser = self.output
+        output.clear()
+        for string in text:
+            output.append(string)
+
     def get_selected_function(self):
         return self.functions.checkedId()
 
@@ -165,6 +172,41 @@ class MyWindow(QtWidgets.QMainWindow):
 
     def bees_algorithm_get_perspective_plot_radius(self):
         return float(self.perspective_plot_radius.text())
+
+    # get data for swarm algorithm
+    def swarm_get_iter_count(self):
+        return int(self.number_of_iterations.text())
+
+    def swarm_get_eps(self):
+        return float(self.eps.text())
+
+    def swarm_get_dimension(self):
+        return int(self.dimension.text())
+
+    def swarm_get_swarm_size(self):
+        return int(self.swarm_size.text())
+
+    def swarm_get_current_velocity_ratio(self):
+        return float(self.current_velocity_ratio.text())
+
+    def swarm_get_local_velocity_ratio(self):
+        return float(self.local_velocity_ratio.text())
+
+    def swarm_get_global_velocity_ratio(self):
+        return float(self.global_velocity_ratio.text())
+
+    # get data for ais algorithm
+    def ais_get_number_of_antibodies(self):
+        return int(self.number_of_antibodies.text())
+
+    def ais_get_number_of_clones(self):
+        return int(self.number_of_clones.text())
+
+    def ais_get_mutation_ratio(self):
+        return float(self.mutation_ratio.text())
+
+    def ais_get_threshold_compression_ratio(self):
+        return float(self.threshold_compression_ratio.text())
 
 
 if __name__ == '__main__':

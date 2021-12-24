@@ -98,6 +98,172 @@
      </property>
     </widget>
    </widget>
+   <widget class="QWidget" name="swarm_algorithm">
+    <attribute name="title">
+     <string>Swarm algorithm</string>
+    </attribute>
+    <widget class="QLineEdit" name="number_of_iterations">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>60</y>
+       <width>113</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_number_of_iterations">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>30</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Number of iterations</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_eps">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>100</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>eps</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="eps">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>130</y>
+       <width>113</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_dimension">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>170</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Dimension</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="dimension">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>200</y>
+       <width>113</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_swarm_size">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>240</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Swarm size</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="swarm_size">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>270</y>
+       <width>113</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_current_velocity_ratio">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>310</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Current velocity ratio</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="current_velocity_ratio">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>340</y>
+       <width>113</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_local_velocity_ratio">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>390</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Local velocity ratio</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="local_velocity_ratio">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>420</y>
+       <width>113</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_globa_velocity_ratio">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>460</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Global velocity ratio</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="global_velocity_ratio">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>490</y>
+       <width>113</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
    <widget class="QWidget" name="bees_algorithm">
     <attribute name="title">
      <string>Bees algorithm</string>
@@ -264,6 +430,103 @@
      </property>
     </widget>
    </widget>
+   <widget class="QWidget" name="ais_algorithm">
+    <attribute name="title">
+     <string>AIS algorithm</string>
+    </attribute>
+    <widget class="QLabel" name="label_number_of_clones">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>120</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Number of clones</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_number_of_antibodies">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>50</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Number of antibodies</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="mutation_ratio">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>220</y>
+       <width>113</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="threshold_compression_ratio">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>290</y>
+       <width>113</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_mutation_ratio">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>190</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Mutation ratio</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_threshold_compression_ratio">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>260</y>
+       <width>181</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Treshold compression ratio</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="number_of_antibodies">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>80</y>
+       <width>113</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="number_of_clones">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>150</y>
+       <width>113</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
   </widget>
   <widget class="QScrollArea" name="scrollArea">
    <property name="geometry">
@@ -364,6 +627,19 @@
    </property>
    <property name="text">
     <string>Химмельблау</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="rastrigin">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>10</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Растригин</string>
    </property>
   </widget>
  </widget>
