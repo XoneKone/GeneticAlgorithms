@@ -124,6 +124,8 @@ def plot_rastrigin(params):
 
 
 class AlgorithmLauncher:
+    upper_bound = (5, 5)
+    lower_bound = (-5, -5)
 
     def launch(self, window: gui.MyWindow):
         selected_algorithm = window.get_selected_algorithm()
@@ -219,6 +221,7 @@ class AlgorithmLauncher:
 
     def ais_algorithm(self, window):
         ais.ANTIBODIES_NUMBER = window.ais_get_number_of_antibodies()
+        ais.BEST_ANTIBODIES_NUMBER = window.ais_get_number_of_best_antibodies()
         ais.CLONES_NUMBER = window.ais_get_number_of_clones()
         ais.MUTATION_RATIO = window.ais_get_mutation_ratio()
         ais.THRESHOLD_COMPRESSION_RATIO = window.ais_get_threshold_compression_ratio()

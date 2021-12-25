@@ -42,7 +42,7 @@ def next_iteration(plots):
         )
 
     new_plots.extend(plots)
-    return new_plots
+    return sorted(new_plots, key=fittest, reverse=True)[:NUMBER_OF_SCOUT_BEES]
 
 
 def in_bounds(point: Point, lower_bound: Point, upper_bound: Point):

@@ -199,6 +199,9 @@ class MyWindow(QtWidgets.QMainWindow):
     def ais_get_number_of_antibodies(self):
         return int(self.number_of_antibodies.text())
 
+    def ais_get_number_of_best_antibodies(self):
+        return int(self.number_of_best_antibodies.text())
+
     def ais_get_number_of_clones(self):
         return int(self.number_of_clones.text())
 

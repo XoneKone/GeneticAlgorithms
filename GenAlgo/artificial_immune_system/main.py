@@ -34,37 +34,38 @@ def mutation(point: Point):
     return numpy.array(mutated)
 
 
-# def next_iteration(antibodies):
-#     best_antibodies = sorted(antibodies, key=fittest, reverse=True)[BEST_ANTIBODIES_NUMBER]
-#     clones = []
-#     for antibody in best_antibodies:
-#         clones.extend([antibody[0]] * CLONES_NUMBER)
-#
-#     mutated = sorted([mutation(clone) for clone in clones], key=fittest, reverse=True)[SELECTION_RATE]
-#     union = antibodies + mutated
-#     return sorted(union, key=fittest, reverse=True)[COMPRESSION_RATE]
-
 def next_iteration(antibodies):
-    new_population = []
-    for antibody in antibodies:
-        clones = [antibody] * CLONES_NUMBER
-        mutated = [mutation(clone) for clone in clones]
-        max_mutated = max(mutated, key=fittest)
-        if fittest(max_mutated) > fittest(antibody):
-            new_population.append(max_mutated)
-        else:
-            new_population.append(antibody)
+    best_antibodies = sorted(antibodies, key=fittest, reverse=True)[:BEST_ANTIBODIES_NUMBER]
+    clones = []
+    for antibody in best_antibodies:
+        clones.extend([antibody] * CLONES_NUMBER)
 
-    for i, antibody in enumerate(new_population):
-        for j, another_antibody in enumerate(new_population):
-            if antibody is not another_antibody:
-                if numpy.linalg.norm(antibody - another_antibody) > THRESHOLD_COMPRESSION_RATIO:
-                    if fittest(antibody) > fittest(another_antibody):
-                        del new_population[j]
-                    else:
-                        del new_population[i]
+    mutated = sorted([mutation(clone) for clone in clones], key=fittest, reverse=True)
+    threshold = slice(int(THRESHOLD_COMPRESSION_RATIO * len(mutated)))
+    union = antibodies + mutated[threshold]
+    return sorted(union, key=fittest, reverse=True)[:ANTIBODIES_NUMBER]
 
-    return new_population
+# def next_iteration(antibodies):
+#     new_population = []
+#     for antibody in antibodies:
+#         clones = [antibody] * CLONES_NUMBER
+#         mutated = [mutation(clone) for clone in clones]
+#         max_mutated = max(mutated, key=fittest)
+#         if fittest(max_mutated) > fittest(antibody):
+#             new_population.append(max_mutated)
+#         else:
+#             new_population.append(antibody)
+#
+#     for i, antibody in enumerate(new_population):
+#         for j, another_antibody in enumerate(new_population):
+#             if antibody is not another_antibody:
+#                 if numpy.linalg.norm(antibody - another_antibody) > THRESHOLD_COMPRESSION_RATIO:
+#                     if fittest(antibody) > fittest(another_antibody):
+#                         del new_population[j]
+#                     else:
+#                         del new_population[i]
+#
+#     return new_population
 
 
 def in_bounds(point: Point, lower_bound: Point, upper_bound: Point):
