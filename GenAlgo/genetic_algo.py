@@ -85,7 +85,7 @@ def mating(parents, method='Single Point'):
     return offsprings
 
 
-def mutation(individual, upper_limit, lower_limit, muatation_rate=2, method='Gauss', standard_deviation=0.01):
+def mutation(individual, upper_limit, lower_limit, muatation_rate=2, method='Gauss', standard_deviation=0.5):
     mutated_individual = individual.copy()
     if method == 'Gauss':
         for x in range(muatation_rate):

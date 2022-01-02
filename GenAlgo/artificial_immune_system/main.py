@@ -1,6 +1,6 @@
 import numpy
 
-from GenAlgo.bees.main import Point
+from bees.main import Point
 
 ANTIGENS_NUMBER = 0
 CLONES_NUMBER = 0

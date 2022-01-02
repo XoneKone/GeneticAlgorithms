@@ -129,8 +129,11 @@ class MyWindow(QtWidgets.QMainWindow):
                 for point, fitness in points_with_fitness
             ]
             output.append('Итерация {}\n{}\n'.format(i + 1, '\n'.join(points_str)))
-            better_point = point_format.format(better_points[i][0], better_points[i][1])
-            output.append('\n{}\n'.format(better_point))
+            if better_points is None:
+                output.append(f'\nBest: {points_str[-1]}\n')
+            else:
+                better_point = point_format.format(better_points[i][0], better_points[i][1])
+                output.append('\n{}\n'.format(better_point))
 
     def output_text(self, text):
         output: QTextBrowser = self.output
@@ -168,10 +171,10 @@ class MyWindow(QtWidgets.QMainWindow):
         return int(self.number_of_bees_on_perspective_plots.text())
 
     def bees_algorithm_get_elite_plot_radius(self):
-        return float(self.elite_plot_radius.text())
+        return float(str(self.elite_plot_radius.text()).replace(',', '.'))
 
     def bees_algorithm_get_perspective_plot_radius(self):
-        return float(self.perspective_plot_radius.text())
+        return float(str(self.perspective_plot_radius.text()).replace(',', '.'))
 
     # get data for swarm algorithm
     def swarm_get_iter_count(self):

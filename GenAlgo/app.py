@@ -4,7 +4,7 @@ import numpy
 from PyQt5 import QtWidgets
 from matplotlib import pyplot as plt, cm, animation
 
-import bees.main as bees
+from bees import main as bees
 import artificial_immune_system.main as ais
 import constants
 import gui
@@ -75,7 +75,8 @@ def plot_rastrigin(params):
     :param params: [iterCount, eps, dimension,swarmsize,currentVelocityRatio,localVelocityRatio,globalVelocityRatio]
     :return:
     """
-    best_positions, result_print = runoptimize_rastrigin.run(*params) # Во второй переменной хранится строка для вывода инфы
+    best_positions, result_print = runoptimize_rastrigin.run(
+        *params)  # Во второй переменной хранится строка для вывода инфы
     X = numpy.arange(-5.12, 5.12, 0.01)
     Y = numpy.arange(-5.12, 5.12, 0.01)
 
@@ -124,8 +125,8 @@ def plot_rastrigin(params):
 
 
 class AlgorithmLauncher:
-    upper_bound = (5, 5)
     lower_bound = (-5, -5)
+    upper_bound = (5, 5)
 
     def launch(self, window: gui.MyWindow):
         selected_algorithm = window.get_selected_algorithm()
@@ -162,7 +163,7 @@ class AlgorithmLauncher:
             mode = 1
             function = TestFunctions.dshishkina_function
 
-        return function, mode
+        return function, mode, selected_function
 
     def genetic_algorithm(self, window):
         gen = genetic_algo.run(
@@ -170,7 +171,7 @@ class AlgorithmLauncher:
             window.genetic_algorithm_get_number_of_individuals(),
             2,
             -2,
-            task=self.get_selected_function()[1]
+            task=self.get_selected_function()[2]
         )
         points = [generation['Individuals'] for generation in gen]
         window.show_output(gen, None)
@@ -198,12 +199,12 @@ class AlgorithmLauncher:
         bees.ELITE_PLOT_RADIUS = window.bees_algorithm_get_elite_plot_radius()
         bees.PERSPECTIVE_PLOT_RADIUS = window.bees_algorithm_get_perspective_plot_radius()
 
-        function, mode = self.get_selected_function()
+        function, mode, _ = self.get_selected_function()
 
         bees.fittest = lambda point: mode * function(point[0], point[1])
 
-        lower_bound = numpy.array([*self.lower_bound])
-        upper_bound = numpy.array([*self.upper_bound])
+        lower_bound = numpy.array([-5, -5])
+        upper_bound = numpy.array([5, 5])
         _, iterations = bees.main(lower_bound, upper_bound, 50)
         points = [iteration['Individuals'] for iteration in iterations]
         better_points = [max(iteration['Individuals'], key=lambda x: bees.fittest(x)) for iteration in iterations]
@@ -226,7 +227,7 @@ class AlgorithmLauncher:
         ais.MUTATION_RATIO = window.ais_get_mutation_ratio()
         ais.THRESHOLD_COMPRESSION_RATIO = window.ais_get_threshold_compression_ratio()
 
-        function, mode = self.get_selected_function()
+        function, mode, _ = self.get_selected_function()
 
         ais.fittest = lambda point: mode * function(point[0], point[1])
 
